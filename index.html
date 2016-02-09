@@ -1,0 +1,74 @@
+---
+layout: default
+title: Home
+---
+{% include newpost.html %}
+<div class="posts">
+  {% for post in site.tags.quote %}
+  <div class="post" style="minimum-height: 65px;">
+    <div class="post-content" style="padding-left: 55px; font-size: 1.2rem;">{{ post.content }}</div><hr></div>
+  {% endfor %}
+  
+  {% for post in site.tags.sticky %}
+  <div class="post">
+    <h1 class="post-title"><img src="/public/sticky.png" align="left" height="52" width="52">
+      <a href="{{ post.url }}">
+	{{ post.title }}
+      </a>
+    </h1>
+    <span class="post-date" style="padding-left: 52px;">{% include bangla-post-date.html %}</span>
+    <hr>
+    <div class="post-content" style="padding-left: 52px;">
+      {{ post.content }}
+    </div>
+  </div>
+  {% endfor %}
+  
+  {% for post in paginator.posts %}
+  {% unless post.tags contains "sticky" %}
+  {% unless post.tags contains "quote" %}
+  <div class="post">
+    <h1 class="post-title">
+      <img {% if post.tags contains "যন্ত্রচারী" %}
+              src="/public/code.png"
+              {% elsif post.tags contains "কবিতা" %}
+              src="/public/poem.png"
+              {% elsif post.tags contains "হিজিবিজি" %}
+              src="/public/hijibiji.png"
+              {% elsif post.tags contains "গল্প" %}
+              src="/public/story.png"
+              {% else %}
+              src="/public/writing.png"
+              {% endif %} align="left" height="52" width="52">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    <span class="post-date" style="padding-left: 52px;">{% include bangla-post-date.html %}</span>
+    <hr>
+    <div class="post-content" style="padding-left: 52px;">
+      {{ post.content }}
+    </div>
+  </div>
+  {% endunless %}
+  {% endunless %}
+  {% endfor %}
+</div>
+
+{% include share-page.html %}
+<div class="pagination">
+  {% if paginator.next_page %}
+  <a class="pagination-item older" href="/page{{paginator.next_page}}">পূর্ববর্তী</a>
+  {% else %}
+  <span class="pagination-item older">পূর্ববতী</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+  {% if paginator.page == 2 %}
+  <a class="pagination-item newer" href="/">পরবর্তী</a>
+  {% else %}
+  <a class="pagination-item newer" href="/page{{paginator.previous_page}}">পরবর্তী</a>
+  {% endif %}
+  {% else %}
+  <span class="pagination-item newer">পরবর্তী</span>
+  {% endif %}
+</div>
