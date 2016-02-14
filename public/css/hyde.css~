@@ -36,7 +36,7 @@
 }
 
 html {
-  font-family: solaimanlipi
+  font-family: 'myNotoBengali', 'Source Code Pro', "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48rem) {
   html {
