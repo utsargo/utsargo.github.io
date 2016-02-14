@@ -31,12 +31,12 @@
  * Update the foundational and global aspects of the page.
  */
 @font-face {
-    font-family: AdorshoLipi;
-    src: url(AdorshoLipi_20-07-2007.ttf);
+    font-family: solaimanlipi;
+    src: url(SolaimanLipi_20-04-07.ttf);
 }
 
 html {
-  font-family: 'AdorshoLipi';
+  font-family: solaimanlipi
 }
 @media (min-width: 48rem) {
   html {
@@ -107,7 +107,7 @@ html {
 .sidebar-about h1 {
     color: #fff;
     margin-top: 0;
-    font-family: 'AdorshoLipi';
+    font-family: 'myNotoBengali', 'Source Code Pro', sans-serif;
     font-size: 2.75rem;
     text-decoration: none;
 }
@@ -115,7 +115,7 @@ html {
 #site-title {
     color: #fff;
     margin-top: 0;
-    font-family: 'AdorshoLipi';
+    font-family: 'myNotoBengali', 'Source Code Pro',  sans-serif;
     font-size: 2.75rem;
     text-decoration: none;
 }
@@ -123,7 +123,7 @@ html {
 .sidebar-about h1:hover {
     color: #fff;
     margin-top: 0;
-    font-family: 'AdorshoLipi';
+    font-family: font-family: 'myNotoBengali', 'Source Code Pro', sans-serif;
     font-size: 2.75rem;
     text-decoration: none;
 }
