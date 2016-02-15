@@ -1,0 +1,17 @@
+---
+layout: default
+comments: true
+---
+{% include math.html %}
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+    <span class="post-date">{% include bangla-page-date.html %}</span>
+  <div class= "post-content">
+	  {{ page.content }}
+  </div>
+</div>
+
+{% include share-page.html %}
+{% include related-posts.html %}
+{% include disqus.html %}
+{% include editpage.html %}
