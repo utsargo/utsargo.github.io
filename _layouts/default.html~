@@ -8,7 +8,7 @@
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '515675681947225',
+      appId      : '457260967807558',
       xfbml      : true,
       version    : 'v2.5'
     });
@@ -22,6 +22,7 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
 {% include sidebar.html %}
 
     <div class="content container">

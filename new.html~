@@ -3,7 +3,7 @@ layout: default
 title: নতুন পোস্ট
 permalink: /add/
 ---
-<form action="https://github.com/uroybd/utsargo.github.io/new/master/_posts/" method="get" onsubmit="determineFilename(this);">
+<form action="https://github.com/uroybd/uroybd.github.io/new/master/_posts/" method="get" onsubmit="determineFilename(this);">
   <input type="hidden" name="filename" value="">
   <div class="form-group">
     <input type="text" name="title" class="form-control" id="titleInput" placeholder="শিরোনাম">
