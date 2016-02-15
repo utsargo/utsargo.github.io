@@ -2,8 +2,8 @@ markdown: kramdown
 kramdown:
   hard_wrap: true
 url: http://utsargo.github.io
-title: আবোল তাবোল
-tagline: ""
+title: স্বীকারোক্তি
+tagline: "শতং বদ মা লিখ"
 timezone: Asia/Dhaka
 description: "ইয়াদি কির্দ অত্র কাকালতনামা লিখিতং শ্রীকাক্কেশ্বর কুচ্‌কুচে কার্যঞ্চাগে…."
 paginate: 10
