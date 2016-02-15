@@ -1,6 +1,7 @@
 <div class="sidebar" align="center">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
+<p align="center"><img align="center" src="sidebar-img.png" height="150" /></p>
       <p class="lead" align="center" style="font-size: 1.50rem;">{{ site.tagline }}</p>
       <a href="{{ site.url }}"><h1 align="center">{{ site.title }}</h1></a>
       <div class="imgWrap">
