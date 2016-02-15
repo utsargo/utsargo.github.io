@@ -3,7 +3,7 @@ layout: default
 title: নতুন পোস্ট
 permalink: /add/
 ---
-<form action="https://github.com/uroybd/utsargo.github.io/new/master/_posts/" method="get" onsubmit="determineFilename(this);">
+<form action="https://github.com/utsargo/utsargo.github.io/tree/master/_posts" method="get" onsubmit="determineFilename(this);">
   <input type="hidden" name="filename" value="">
   <div class="form-group">
     <input type="text" name="title" class="form-control" id="titleInput" placeholder="শিরোনাম">
@@ -42,6 +42,6 @@ function determineFilename(form) {
   form.filename.value = filename;
   // Add the YAML prefix on the content
    form.value.value = "---\npublished: true\nlayout: post\ntitle: \"" + post_title + "\"\ncomments: true\npublished: " + willpublish + "\ntags: " + prntag + "\n---\n\n" + form.value.value;
-   form.action = "https://github.com/uroybd/uroybd.github.io/new/master/_posts/" + filename;
+   form.action = "https://github.com/utsargo/utsargo.github.io/tree/master/_posts" + filename;
 }
 </script>
