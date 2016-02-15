@@ -12,15 +12,15 @@
     {% endif %}
 
 {% if page.title == "Home" %}
-<meta property="og:image" content="http://utsargo.github.io/public/persona.jpg" />
+<meta property="og:image" content="http://uroybd.github.io/public/persona.jpg" />
 {% elsif page.tags contains "কবিতা" %}
-<meta property="og:image" content="http://utsargo.github.io/public/poem.png" />
+<meta property="og:image" content="http://uroybd.github.io/public/poem.png" />
 {% elsif page.tags contains "হিজিবিজি" %}
-<meta property="og:image" content="http://utsargo.github.io/public/hijibiji.png" />
+<meta property="og:image" content="http://uroybd.github.io/public/hijibiji.png" />
 {% elsif page.tags contains "যন্ত্রচারী" %}
-<meta property="og:image" content="http://utsargo.github.io/public/code.png" />
+<meta property="og:image" content="http://uroybd.github.io/public/code.png" />
 {% else %}
-<meta property="og:image" content="http://utsargo.github.io/public/writing.png" />
+<meta property="og:image" content="http://uroybd.github.io/public/writing.png" />
 {% endif %}
 
 {% if page.date %}
@@ -56,4 +56,4 @@
 {% else %}
   <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
-<meta name="twitter:image:src" content="http://utsargo.github.io/public/persona.jpg">
+<meta name="twitter:image:src" content="http://uroybd.github.io/public/persona.jpg">
