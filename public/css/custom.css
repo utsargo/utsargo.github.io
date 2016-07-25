@@ -313,3 +313,7 @@ a.back-to-top {
     border-color: #2E8DEF;
     z-index: 99999;
 }
+img {
+    width: 100%;
+    height: auto;
+}
