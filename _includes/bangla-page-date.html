@@ -1,6 +1,8 @@
 {% assign d = page.date | date: "%-d" %}
 {% assign m = page.date | date: "%-m" %}
 {% assign y = page.date | date: "%-Y" %}
+{% assign h = page.date | date: "%H" %}
+{% assign n = page.date | date: "%M" %}
 {% case d %}
 {% when '1' %}০১
 {% when '2' %}০২
@@ -49,10 +51,39 @@
   {% when '12' %}ডিসেম্বর
 {% endcase %}
 {% case y %}
-{% when '2011' %}২০১১
-{% when '2012' %}২০১২
-{% when '2013 %}২০১৩
-{% when '2014' %}২০১৪
 {% when '2015' %}২০১৫
 {% when '2016' %}২০১৬
+{% else %}
+{{ y | replace:'0','০' | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯'}}
+{% endcase %}
+{% case h %}
+{% when '00' %}রাত ১২টা
+{% when '01' %}রাত ০১টা
+{% when '02' %}রাত ০২টা
+{% when '03' %}রাত ০৩টা
+{% when '04' %}ভোর ০৪টা
+{% when '05' %}ভোর ০৫টা
+{% when '06' %}ভোর ০৬টা
+{% when '07' %}সকাল ০৭টা
+{% when '08' %}সকাল ০৮টা
+{% when '09' %}সকাল ০৯টা
+{% when '10' %}সকাল ১০টা
+{% when '11' %}সকাল ১১টা
+{% when '12' %}দুপুর ১২টা
+{% when '13' %}দুপুর ০১টা
+{% when '14' %}দুপুর ০২টা
+{% when '15' %}দুপুর ০৩টা
+{% when '16' %}বিকাল ০৪টা
+{% when '17' %}বিকাল ০৫টা
+{% when '18' %}সন্ধ্যা ০৬টা
+{% when '19' %}সন্ধ্যা ০৭টা
+{% when '20' %}রাত ০৮টা
+{% when '21' %}রাত ০৯টা
+{% when '22' %}রাত ১০টা
+{% when '23' %}রাত ১১টা
+{% endcase %}
+{% case n %}
+{% when '00' %} 
+{% else %}
+{{ n | replace:'0','০' | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯'}}মিনিট
 {% endcase %}
