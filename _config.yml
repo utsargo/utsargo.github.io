@@ -16,7 +16,7 @@
 title: স্বীকারোক্তি
 subtitle: "শতং বদ মা লিখ"
 email: royutsargo@gmail.com
-description: "আমি খুবই সহজ মানুষ। সোজা ভাবি, সোজা চলি, সোজা বলি, সোজা লিখি। চিত্তবিনোদনের কোনো অভিপ্রায় নেই। যা কিছু লিখি তা আমার হৃয়দের ছেঁড়া ছেঁড়া কথা। স্বীকারোকতি।"
+description: "আমি খুবই সহজ মানুষ। সোজা ভাবি, সোজা চলি, সোজা বলি, সোজা লিখি। কারো চিত্তবিনোদনের কোনো অভিপ্রায় নেই। যা কিছু লিখি তা আমার হৃয়দের ছেঁড়া ছেঁড়া কথা। স্বীকারোকতি।"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://utsargo.github.io" # the base hostname & protocol for your site
 gems: [jekyll-paginate]
