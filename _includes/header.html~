@@ -1,7 +1,0 @@
-<header id="site-head">
-  {% if site.logo %}
-  <a id="blog-logo" href="{{ site.url }}"><div class="bloglogo" style="background: url({{ site.logo }})"></div></a>{% endif %}
-  <h1 class="blog-title"><a href="{{  site.url }}">{{ site.title}}</a></h1>
-  {{> header-description}}
-  {{!> menu}}
-</header>
