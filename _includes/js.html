@@ -1,0 +1,92 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/locale/bn.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+{% if page.mathify %}
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}
+
+{% if page.layout == "post" %}
+<script>
+var disqus_config = function () {
+this.page.url = '{{ site.url }}{{ page.url }}';
+this.page.identifier = "{{ page.title }}";
+};
+
+(function() {
+var d = document, s = d.createElement('script');
+s.src = '//{{ site.disqus }}.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+<script>
+ $(window).scroll(function() {
+   if ($(this).scrollTop() >= 50) {
+     $('#return-to-top').fadeIn(200);
+   } else {
+     $('#return-to-top').fadeOut(200);
+   }
+ });
+ $('#return-to-top').click(function() {
+   $('body,html').animate({
+     scrollTop : 0
+   }, 500);
+ });
+</script>
+
+<script>
+ function fancyFootnote(element) {
+   notenum = 0;
+   $(element).each(function(){
+     $(this).find(".footnotes").find("[id^='fn:']").each(function() {
+       $(this).find(".reversefootnote").each(function () {
+         $(this).remove();
+       });
+       var note = document.createElement("div");
+       did = $(this).attr("id").split(":")[1];
+       notename = "fnote" + "-" + notenum + "-" + did;
+       note.id = notename;
+       note.className = "fnote";
+       note.innerHTML = '<div class="note-wrapper">' + $(this).html() + '</div>';
+       $("body").append(note);
+       $(this).hide();
+     });
+
+     $(this).find("[id^='fnref:']").each(function(){
+       fid = "fnote" + ":" + notenum + "-" + $(this).attr('id').split(":")[1];
+       $(this).attr('id', fid);
+       $(this).html('<i class="fa fa-asterisk"></i>');
+       $(this).click(function(){
+         f = "fnote-" + $(this).attr('id').split(":")[1];
+         shownote(f);
+       });
+     });
+     notenum += 1;
+   });
+ };
+ {% if page.title == "চিন্তা" %}
+ fancyFootnote(".post-excerpt");
+ {% else %}
+ fancyFootnote(".post-content");
+ {% endif %}
+ $(document).mouseup(function (e)
+   {
+     var container = $(".fnote");
+
+     if (!container.is(e.target)
+         && container.has(e.target).length === 0)
+       {
+         container.removeClass("shownote");
+       }
+   });
+
+ function shownote(f) {
+   $(".fnote").removeClass("shownote");
+   $("#" + f).addClass("shownote");
+ };
+</script>
