@@ -40,6 +40,9 @@ h2{
         text-align: justify;
         margin-bottom: 20px;
         img{
+            &:first-child{
+                width: 40%;
+            }
             padding: 15px;
             height: auto !important;
             border-radius: 0 50px;
@@ -56,8 +59,4 @@ h2{
             }
         }
     }
-}
-img.thumbnail{
-        width: 40% !important;
-
 }
