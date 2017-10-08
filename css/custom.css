@@ -30,13 +30,14 @@ h2.blog-description {
     height: auto !important;
     border-radius: 0 50px;
     transition: 1s; }
-    .post-excerpt p img:first-child, .post-content p img:first-child {
-      width: 40%; }
     .post-excerpt p img:hover, .post-content p img:hover {
       border-radius: 4px;
       transition: 1s; }
   .post-excerpt p:first-child::first-letter, .post-content p:first-child::first-letter {
     font-size: 3em;
     color: black; }
+
+img.thumbnail {
+  width: 40% !important; }
 
 /*# sourceMappingURL=custom.css.map */
