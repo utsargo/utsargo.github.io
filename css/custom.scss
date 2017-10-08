@@ -1,6 +1,8 @@
 .post-excerpt{
     p{
         img{
+            width: 33% !important;
+            height: auto !important;
             border-radius: 0 50px;
             transition: 1s;
             &:hover{
