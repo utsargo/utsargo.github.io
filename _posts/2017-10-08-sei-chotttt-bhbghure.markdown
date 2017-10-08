@@ -23,7 +23,7 @@ tags:
 
 এই গানে এক জায়গায় আছে 'লাভ লাভ লাভ লাভ লাভ লাভ লাভ লাভ লাভ লাভ'। এই লাভ-এর রেলগাড়িটা আসলে ওই ছবিরই একটা গানের মধ্যে আচ্ছে। সাংঘাতিক সুন্দর একটা গান। যারা কিনা দিনান্তে একবার সুইসাইড করার কথা ভাবেন, তারা দয়া করে এই গানটি একবার শুনবেন। একটা দিন অন্তত বেশি বাঁচতে ইচ্ছে হবে, আমার মুর্শিদের কসম!
 
-<img src="/uploads/Limelight-Claire-Bloom-and-Charlie-Chaplin.jpg" alt="Claire Bloom and Charlie Chaplin" width="100%" height="auto">
+<img class="thumbnail" src="/uploads/Limelight-Claire-Bloom-and-Charlie-Chaplin.jpg" alt="Claire Bloom and Charlie Chaplin" width="100%" height="auto">
 একজন বিগতযশা ট্রাম্প কমেডিয়ান আর এক হতাশ ব্যালেরিনার কাহিনী 'লাইমলাইট'। ভালবাসার গল্প। জীবনের গল্প। নিরাশা নিরন্ধ্র আন্ধারে জীবনকে ভালবেসে বাঁচার গল্প।<br>
 
 > ভালবাসা নাও চার্লস চ্যাপলিন...
