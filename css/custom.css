@@ -13,7 +13,7 @@ h1.blog-title {
     transition: 1s; }
 
 h2.blog-description {
-  margin: 0 !important;
+  margin: 10px !important;
   border: none !important; }
   h2.blog-description::after {
     content: '';
@@ -22,16 +22,16 @@ h2.blog-description {
     margin: auto;
     display: block; }
 
-.post-excerpt p, .post-content p {
+.post-excerpt p {
   text-align: justify;
   margin-bottom: 20px; }
-  .post-excerpt p img, .post-content p img {
+  .post-excerpt p img {
     padding: 15px;
     width: 33% !important;
     height: auto !important;
     border-radius: 0 50px;
     transition: 1s; }
-    .post-excerpt p img:hover, .post-content p img:hover {
+    .post-excerpt p img:hover {
       border-radius: 4px;
       transition: 1s; }
 
