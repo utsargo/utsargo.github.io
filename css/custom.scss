@@ -35,13 +35,12 @@ h2{
     }
 }
 
-.post-excerpt,{    
+.post-excerpt{    
     p{
         text-align: justify;
         margin-bottom: 20px;
         img{
             padding: 15px;
-            width: 33% !important;
             height: auto !important;
             border-radius: 0 50px;
             transition: 1s;
@@ -51,4 +50,8 @@ h2{
             }
         }
     }
+}
+img.thumbnail{
+        width: 33% !important;
+
 }
