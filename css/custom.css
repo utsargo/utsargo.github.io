@@ -33,7 +33,7 @@ h2.blog-description {
     .post-excerpt p img:hover, .post-content p img:hover {
       border-radius: 4px;
       transition: 1s; }
-  .post-excerpt p::first-letter, .post-content p::first-letter {
+  .post-excerpt p:first-child::first-letter, .post-content p:first-child::first-letter {
     font-size: 3em;
     color: black; }
 
