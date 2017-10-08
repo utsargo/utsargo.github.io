@@ -23,7 +23,8 @@ h2.blog-description {
     display: block; }
 
 .post-excerpt p, .post-content p {
-  text-align: justify; }
+  text-align: justify;
+  margin-bottom: 20px; }
   .post-excerpt p img, .post-content p img {
     padding: 15px;
     width: 33% !important;
