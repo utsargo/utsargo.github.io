@@ -1,0 +1,63 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 21/08/2017 06:39
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-reminder-paper-with-a-pin:before { content: "\f100"; }
+.flaticon-quote:before { content: "\f101"; }
+.flaticon-tumblr-logo:before { content: "\f102"; }
+.flaticon-goodreads-letter-logo:before { content: "\f103"; }
+.flaticon-google-plus-logo:before { content: "\f104"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f105"; }
+.flaticon-facebook-logo:before { content: "\f106"; }
+.flaticon-magnifier-tool:before { content: "\f107"; }
+.flaticon-chevron-arrow-up:before { content: "\f108"; }
+.flaticon-chevron-arrow-down:before { content: "\f109"; }
+.flaticon-chevron-pointing-to-the-left:before { content: "\f10a"; }
+.flaticon-right-chevron:before { content: "\f10b"; }
+    
+    $font-Flaticon-reminder-paper-with-a-pin: "\f100";
+    $font-Flaticon-quote: "\f101";
+    $font-Flaticon-tumblr-logo: "\f102";
+    $font-Flaticon-goodreads-letter-logo: "\f103";
+    $font-Flaticon-google-plus-logo: "\f104";
+    $font-Flaticon-twitter-logo-silhouette: "\f105";
+    $font-Flaticon-facebook-logo: "\f106";
+    $font-Flaticon-magnifier-tool: "\f107";
+    $font-Flaticon-chevron-arrow-up: "\f108";
+    $font-Flaticon-chevron-arrow-down: "\f109";
+    $font-Flaticon-chevron-pointing-to-the-left: "\f10a";
+    $font-Flaticon-right-chevron: "\f10b";

@@ -1,0 +1,12 @@
+---
+published: false
+date: 2015-09-25 12:07:13 +0600
+title: "হিজিবিজি"
+layout: post
+tags:
+- কবিতা
+permalink: /quote/
+comments: true
+---
+স্কাইস্ক্র্যাপারের ডাল থাকেনা বলেই
+তোমার খোঁপায় কৃষ্ণচূড়ার অভাব।

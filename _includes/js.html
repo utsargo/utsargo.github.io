@@ -1,0 +1,18 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/locale/bn.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+{% if page.mathify %}
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}
+
+<script src="/js/common.js"></script>
+<script>
+ {% if page.title == "চিন্তা" %}
+ fancyFootnote(".post-excerpt");
+ {% else %}
+ fancyFootnote(".post-content");
+ {% endif %}
+</script>

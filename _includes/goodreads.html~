@@ -1,0 +1,46 @@
+<style type="text/css" media="screen">
+ .gr_grid_container {
+   /* customize grid container div here. eg: width: 500px; */
+ }
+
+ .gr_grid_book_container {
+   /* customize book cover container div here */
+   float: left;
+   width: 39px;
+   height: 60px;
+   padding: 0px 0px;
+   overflow: hidden;
+ }
+</style>
+<div id="gr_grid_widget_1502963681">
+  <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
+  <h2>
+    <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/47567491-utsob-roy?shelf=read&utm_medium=api&utm_source=grid_widget">Utsob's bookshelf: read</a>
+  </h2>
+  <div class="gr_grid_container">
+    <div class="gr_grid_book_container"><a title="The Alchemist" rel="nofollow" href="https://www.goodreads.com/book/show/865.The_Alchemist"><img alt="The Alchemist" border="0" src="https://images.gr-assets.com/books/1483412266s/865.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Prelude to Foundation" rel="nofollow" href="https://www.goodreads.com/book/show/30013.Prelude_to_Foundation"><img alt="Prelude to Foundation" border="0" src="https://images.gr-assets.com/books/1335782474s/30013.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Foundation (Foundation #1)" rel="nofollow" href="https://www.goodreads.com/book/show/29579.Foundation"><img alt="Foundation" border="0" src="https://images.gr-assets.com/books/1417900846s/29579.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Foundation and Empire (Foundation #2)" rel="nofollow" href="https://www.goodreads.com/book/show/29581.Foundation_and_Empire"><img alt="Foundation and Empire" border="0" src="https://images.gr-assets.com/books/1391454612s/29581.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Second Foundation (Foundation #3)" rel="nofollow" href="https://www.goodreads.com/book/show/29580.Second_Foundation"><img alt="Second Foundation" border="0" src="https://images.gr-assets.com/books/1417900922s/29580.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Forward the Foundation (Foundation: Prequel #2)" rel="nofollow" href="https://www.goodreads.com/book/show/76679.Forward_the_Foundation"><img alt="Forward the Foundation" border="0" src="https://images.gr-assets.com/books/1430055209s/76679.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="হ য ব র ল" rel="nofollow" href="https://www.goodreads.com/book/show/24479313"><img alt="হ য ব র ল" border="0" src="https://images.gr-assets.com/books/1421144975s/24479313.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Harry Potter and the Sorcerer's Stone (Harry Potter, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone"><img alt="Harry Potter and the Sorcerer's Stone" border="0" src="https://images.gr-assets.com/books/1474154022s/3.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)" rel="nofollow" href="https://www.goodreads.com/book/show/5.Harry_Potter_and_the_Prisoner_of_Azkaban"><img alt="Harry Potter and the Prisoner of Azkaban" border="0" src="https://images.gr-assets.com/books/1499277281s/5.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Harry Potter and the Deathly Hallows (Harry Potter, #7)" rel="nofollow" href="https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows"><img alt="Harry Potter and the Deathly Hallows" border="0" src="https://images.gr-assets.com/books/1474171184s/136251.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Harry Potter and the Order of the Phoenix (Harry Potter, #5)" rel="nofollow" href="https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix"><img alt="Harry Potter and the Order of the Phoenix" border="0" src="https://images.gr-assets.com/books/1387141547s/2.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Harry Potter and the Goblet of Fire (Harry Potter, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/6.Harry_Potter_and_the_Goblet_of_Fire"><img alt="Harry Potter and the Goblet of Fire" border="0" src="https://images.gr-assets.com/books/1361482611s/6.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Harry Potter and the Chamber of Secrets (Harry Potter, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets"><img alt="Harry Potter and the Chamber of Secrets" border="0" src="https://images.gr-assets.com/books/1474169725s/15881.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Harry Potter and the Half-Blood Prince (Harry Potter, #6)" rel="nofollow" href="https://www.goodreads.com/book/show/1.Harry_Potter_and_the_Half_Blood_Prince"><img alt="Harry Potter and the Half-Blood Prince" border="0" src="https://images.gr-assets.com/books/1361039191s/1.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="The Trial" rel="nofollow" href="https://www.goodreads.com/book/show/17690.The_Trial"><img alt="The Trial" border="0" src="https://images.gr-assets.com/books/1320399438s/17690.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Foundation's Edge" rel="nofollow" href="https://www.goodreads.com/book/show/18415969-foundation-s-edge"><img alt="Foundation's Edge" border="0" src="https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png" /></a></div>
+    <div class="gr_grid_book_container"><a title="Foundation and Earth (Foundation, #5)" rel="nofollow" href="https://www.goodreads.com/book/show/9908090-foundation-and-earth"><img alt="Foundation and Earth" border="0" src="https://images.gr-assets.com/books/1292297721s/9908090.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="সভ্যতার সংকট" rel="nofollow" href="https://www.goodreads.com/book/show/27419367"><img alt="সভ্যতার সংকট" border="0" src="https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png" /></a></div>
+    <div class="gr_grid_book_container"><a title="গোরা" rel="nofollow" href="https://www.goodreads.com/book/show/15989094"><img alt="গোরা" border="0" src="https://images.gr-assets.com/books/1346775032s/15989094.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="শেষের কবিতা" rel="nofollow" href="https://www.goodreads.com/book/show/11386578"><img alt="শেষের কবিতা" border="0" src="https://images.gr-assets.com/books/1305695456s/11386578.jpg" /></a></div>
+    <br style="clear: both"/><br/><a class="gr_grid_branding" style="font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both" rel="nofollow" href="https://www.goodreads.com/user/show/47567491-utsob-roy">Utsob Roy's favorite books »</a>
+    <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Utsob, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
+  </div>
+
+</div>
+<script src="https://www.goodreads.com/review/grid_widget/47567491.Utsob's%20bookshelf:%20read?cover_size=small&hide_link=&hide_title=&num_books=20&order=a&shelf=read&sort=date_added&widget_id=1502963681" type="text/javascript" charset="utf-8"></script>

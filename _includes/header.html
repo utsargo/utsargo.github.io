@@ -1,0 +1,20 @@
+<header id="site-head">
+  {% if site.logo %}
+  <a id="blog-logo" href="{{ site.url }}"><div class="bloglogo" style="background: url({{ site.logo }})"></div></a>{% endif %}
+  <h1 class="blog-title"><a href="{{  site.url }}">{{ site.title}}</a></h1>
+  <h2 class="blog-description">{{ site.subtitle }}</h2>
+
+  <nav class="menu" role="nav">
+    {% if page.title == 'চিন্তা' %}<div>চিন্তা</div>{% else %}<div><a href="{{ site.url }}">চিন্তা</a></div>{% endif %}
+      {% for pagem in site.pages %}
+      {% if pagem.title %}
+      {% unless pagem.title == "চিন্তা" or pagem.title == "Admin" or pagem.title == "মগ্ন(৪০৪)" %}
+      {% if pagem.title == page.title %}
+      <div>{{ pagem.title }}</div>
+      {% else %}<div><a href="{{ pagem.url }}">{{ pagem.title }}</a></div>
+      {% endif %}
+      {% endunless %}
+      {% endif %}
+      {% endfor %}
+  </nav>
+</header>

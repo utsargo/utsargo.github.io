@@ -1,0 +1,64 @@
+<head>
+  {% if site.github_username %}
+  <!-- <script>
+       var host = "{{ site.github_username }}.github.io";
+       if ((host == window.location.host) && (window.location.protocol != "https:"))
+       window.location.protocol = "https";
+       </script> -->
+  {% endif %}
+  <link rel="canonical" href="{{ site.url | replace:'http://','https://'}}{{ page.url | replace:'index.html',''}}">
+  <meta charset="UTF-8" />
+  <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
+  <meta name="google-site-verification" content="Z-O3ZCEesAPJGARXPh8NWobh2_nHDMQkwt1Xd0VCsh8" />
+  {% if page.title == "চিন্তা" %}
+  <title>{{site.title}} - {{ site.subtitle }}</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{site.title}} - {{ site.subtitle }}" />
+  <meta property="og:description" content="{{ site.subtitle }}" />
+  <meta name="description" content="{{ site.subtitle }}" />
+  <meta property="og:image"              content="{{ site.url }}/images/weblogo.jpg" />
+  {% elsif page.layout == "post" %}
+  <title>{{page.title}} - {{ site.title }}</title>
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="{{ page.date }}">
+  <meta property='article:author' content='https://www.facebook.com/{{ site.fb_username }}' />
+  <meta property='og:site_name' content='{{ site.title }}' />
+  <meta property="og:title" content="{{page.title}} - {{ site.title }}" />
+  <meta property="og:description" content="{{ page.content | strip_html | truncate: 150, '...'}}" />
+  <meta name="description" content="{{ page.content | strip_html | truncate: 150, '...'}}" />
+  {% if page.fimage %}
+  <meta property="og:image" content="{{ page.fimage }}" />
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/images/weblogo.jpg" />
+  {% endif %}
+  {% elsif page.title == "আমি" %}
+  <title>{{page.title}} - {{ site.title }}</title>
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type"   content="profile" />
+  <meta property="profile:first_name"   content="{{ site.first_name }}" />
+  <meta property="profile:last_name"   content="{{ site.last_name }}" />
+  <meta property="fb:profile_id"   content="{{ site.fb_username }}" />
+  <meta property="profile:gender"   content="{{ site.gender }}" />
+  <meta property="og:username"   content="{{ site.fb_username }}" />
+  <meta property="og:image"              content="{{ site.url }}/images/me.jpg" />
+  <meta property="og:title" content="{{ site.author.name }} - {{ site.title }}" />
+  <meta property="og:description" content="{{ site.author.bio }}" />
+  <meta name="description" content="{{ site.author.bio }}" />
+  {% else %}
+  <title>{{page.title}} - {{ site.title }}</title>
+  <meta property="og:title" content="{{page.title}} - {{ site.title }}" />
+  <meta property="og:description" content="{{ site.subtitle }}" />
+  <meta name="description" content="{{ site.subtitle }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image"              content="{{ site.url }}/images/weblogo.jpg" />
+  {% endif %}
+  <meta property="fb:pages" content="211544519324446" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="minimum-scale=1, width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta property="og:url"                content="{{ site.url }}{{ page.url }}" />
+  <link rel="stylesheet" href="{{ site.url }}/css/normalize.css" />
+  <link rel="stylesheet" href="{{ site.url }}/css/screen.css" />
+  <link rel="stylesheet" href="{{ site.url }}/css/monokai.css" />
+  <link href="https://fonts.googleapis.com/earlyaccess/notosansbengaliui.css" rel="stylesheet"/>
+</head>

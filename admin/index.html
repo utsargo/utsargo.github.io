@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Meet Hyde - Admin</title>
+
+		<link rel="stylesheet" href="https://googledrive.com/host/0B0cqc_EVE0GFMlluVnhteGVYeGM">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/dropzone/4.2.0/dropzone.min.css">
+		<link rel="stylesheet" href="https://googledrive.com/host/0B0cqc_EVE0GFUC1zdkprYmVjMDA">
+	</head>
+	<body class="container-fluid" data-content="sites">
+		<!-- loading -->
+			<div class="loading">
+				<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+			</div>
+		<!-- deleting -->
+			<div class="deleting">
+				<div class="text"><b>Please wait, your files are being deleted</b></div>
+				<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+				<progress class="progress progress-striped progress-animated" value="0" max="100"></progress>
+				<div class="percent">0 %</div>
+			</div>
+		<!-- no click -->
+			<div class="noclick"></div>
+		<!-- fixed header -->
+			<header class="row">
+				<div id="logo" class="col-sm-2">
+					<button id="toggle" type="button" class="btn btn-secondary"><i class="fa fa-bars"></i></button>
+					<img src="https://googledrive.com/host/0B0cqc_EVE0GFdC15aWRqS2V5Nm8" alt="">
+				</div>
+				<div class="col-sm-10">
+					<div class="repo">
+						<span class="title h4"></span>
+						<span class="url"></span>
+					</div>
+					<div class="main-nav">
+						<button id="back" type="button" class="btn btn-sm btn-secondary"><i class="fa fa-arrow-left"></i></button>
+						<div id="FTitle" class="h5"></div>
+						<div class="breadcrumb">
+							<i class="fa fa-home my-websites"></i>
+						</div>
+					</div>
+				</div>
+			</header>
+
+		<!-- content -->
+			<div class="row">
+				<!-- aside -->
+					<aside class="col-sm-2">
+						<div class="user-info">
+							<img class="avatar img-circle" src="">
+							<div class="user-name"></div>
+						</div>
+						<div class="my-websites">My websites <span class="label label-pill pull-right"></span></div>
+						<div class="list">
+							<div class="title h6"></div>
+							<ul class="list-unstyled"></ul>
+						</div>
+					</aside>
+				<!-- main content -->
+					<main class="col-sm-10">
+						<div id="CreateUpload">
+							<button type="button" class="create btn btn-success btn-sm" data-toggle="modal" data-target="#createFile"><i class="fa fa-plus-circle"></i> Create new file</button>
+							<button type="button" class="upload btn btn-success btn-sm" data-toggle="modal" data-target="#uploadFile"><i class="fa fa-cloud-upload"></i> Upload images</button>
+						</div>
+						<div class="content"></div>
+						<div class="images card-columns"></div>
+					</main>
+			</div>
+		
+		<!-- modals -->
+			<!-- CNAME -->
+				<div id="CNAME" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+								</button>
+				        <h4 class="modal-title">CNAME</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<p>Copy the custom domain you will use for this website</p>
+				        <input id="CustomDomain" class="form-control">
+				      </div>
+				      <div class="modal-footer">
+				      	<button type="button" class="btn btn-success-outline" data-dismiss="modal" onclick="saveChanges()">Save Changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			<!-- commit message -->
+				<div id="CommitMsg" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+								</button>
+				        <h4 class="modal-title">Commit Message</h4>
+				      </div>
+				      <div class="modal-body">
+				        <textarea class="form-control" id="commit" rows="3"></textarea>
+				      </div>
+				      <div class="modal-footer">
+				      	<button type="button" class="btn btn-success-outline" data-dismiss="modal" onclick="saveChanges()">Save Changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			
+			<!-- MdImage -->
+				<div id="MdImage" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				      	<span id="Upload"><i class="fa fa-plus-circle"></i> Upload</span><b>|</b>
+		        		<span id="FromUrl"><i class="fa fa-link"></i> Insert from url</span>
+		        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+				          <span class="sr-only">Close</span>
+				        </button>
+							</div>
+							<div class="modal-body">
+								<div class="breadcrumb"></div>
+				      	<div class="loading">
+									<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+								</div>
+								
+				        
+			        	<div class="folders"></div>
+			        	<div class="files"></div>
+			        	
+			        	<div class="uploader">
+			        		<form action="/file-upload" class="dropzone manager-drop" id="MdUploader"></form>
+			        		<button type="button" class="btn btn-success"><i class="fa fa-check"></i> Upload</button>
+			        		<button type="button" class="btn btn-danger"><i class="fa fa-times"></i></button>
+			        	</div>
+							</div>
+							<div class="uploading">
+								<div class="text"><b>Please wait, your images are being uploaded</b></div>
+								<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+								<progress class="progress progress-striped progress-animated" value="0" max="100"></progress>
+								<div class="percent">0 %</div>
+							</div>
+						</div>
+				  </div>
+				</div>
+
+				<!-- insert url -->
+					<div id="insertUrl" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+								<div class="modal-header">
+					      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+					        </button>
+								</div>
+					      <div class="modal-body">
+					        <p>Paste the url for the image you whish to insert</p>
+					        <div class="row">
+					        	<div class="col-sm-9"><input class="form-control"></div>
+										<div class="col-sm-3"><img src="" class="img-responsive img-thumbnail"></div>
+									</div>
+							  </div>
+					      <div class="modal-footer">
+					      	<button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-check"></i> Use</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+				<!-- confirm delete -->
+					<div id="confirmDelete" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content text-center">
+								<div class="loading">
+									<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+								</div>
+					      <div class="modal-body">
+					        <div class="alert alert-danger" role="alert">
+									  <h4><i class="fa fa-exclamation-tiangle"></i> Caution!</h4>
+										<div class="lead">Are you sure you want to delete the selected images?</div>
+									</div>
+					      </div>
+					      <div class="modal-footer">
+					      	<button type="button" class="btn btn-secondary" data-dismiss="modal">Take me back</button>
+					      	<button id="Confirm" type="button" class="btn btn-danger" data-dismiss="modal">Confrim</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			<!-- choose editor -->
+				<div id="Editors" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+				    <div class="modal-content text-center">
+				    	<div class="modal-header">
+				      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+				        </button>
+				      </div>
+							<div class="modal-body">
+				        <div class="lead">Choose the editor you'll like to use for this file</div>
+				      </div>
+				      <div class="modal-footer">
+				      	<button type="button" class="btn btn-secondary html" data-editor="html">HTML</button>
+				      	<button type="button" class="btn btn-secondary md" data-editor="md">MarkDown</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			<!-- add files/folders -->
+				<div id="createFile" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+							<div class="modal-header">
+				      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+				        </button>
+							</div>
+				      <div class="modal-body">
+				        <p>Copy the name for the new file. You can create folders on the fly by specifying the folder name followed by a slash before the file name. Example: </p>
+				        <pre>Folder Name/Filename.html</pre>
+				        <p><b>Tip:</b> If you're creating a post the date will be automatically added at the beginning of the name.</p>
+				        <form class="form-inline">
+								  <div class="form-group">
+								    <label for="filename"></label>
+								    <input type="text" class="form-control" id="filename">
+								  </div>
+								</form>
+							</div>
+				      <div class="modal-footer">
+				      	<button type="button" class="btn btn-success" disabled><i class="fa fa-ban"></i></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			<!-- add images/folders -->
+				<div id="uploadFile" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+				        </button>
+							</div>
+							<div class="modal-body">
+								<div class="header">
+									<p>If you want to upload the files into a new folder inside the current one copy the name for the new folder in the text field</p>
+					        <form class="form-inline">
+									  <div class="form-group">
+									    <label for="filename"></label>
+									    <input type="text" class="form-control" id="filename">
+									  </div>
+									</form>
+								</div>
+				      	<div class="uploader">
+			        		<button type="button" class="btn btn-success"><i class="fa fa-check"></i> Upload</button>
+			        		<form action="/file-upload" class="dropzone addimage-drop" id="addFromFolder"></form>
+			        	</div>
+							</div>
+							<div class="uploading">
+								<div class="text"><b>Please wait, your images are being uploaded</b></div>
+								<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+								<progress class="progress progress-striped progress-animated" value="0" max="100"></progress>
+								<div class="percent">0 %</div>
+							</div>
+				    </div>
+				  </div>
+				</div>
+
+				<div id="Uploading" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="noclick"></div>
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <span class="noshow">Uploading <span class="percent">0 %</span></span>
+				      	<button type="button" class="close">
+				          <span aria-hidden="true"><i class="fa fa-minus"></i></span>
+				        </button>
+							</div>
+							<div class="modal-body text-center">
+								<div class="text">
+									<p>Great!! your images are being uploaded. Please note this may take a while depending on the images size.</p>
+									<p>You can minimize this message and continue working, but please <b>DO NOT</b> close or refresh the browser window, you'll be notified when the upload is complete.</p>
+								</div>
+								<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+								<progress class="progress progress-striped progress-animated" value="0" max="100"></progress>
+								<div class="percent">0 %</div>
+							</div>
+						</div>
+				  </div>
+				</div>
+
+				<div id="UploadSuccess" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+				        </button>
+							</div>
+							<div class="modal-body text-center">
+								<div class="text">
+									<p></p><p></p>
+									<div class="lead">Your images have been successfully uploaded.</div>
+									<p></p><p></p>
+								</div>
+							</div>
+						</div>
+				  </div>
+				</div>
+
+			<!-- Fork a repo -->
+				<div id="Fork" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+							<div class="modal-header">
+				      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+				        </button>
+							</div>
+				      <div class="modal-body">
+				        <p>Use this option to fork a repository which contains a jekyll theme</p>
+								  <div class="form-group">
+								    <label>Name for the new repository</label>
+								    <input type="text" class="form-control newname">
+								  </div>
+
+				        <form class="form-inline">
+								  <div class="form-group">
+								    <label>User Name <span>(Repository owner)</span></label>
+								    <input type="text" class="form-control username">
+								  </div>
+
+								  <div class="form-group">
+								    <label>Repository Name</label>
+								    <input type="text" class="form-control reponame">
+								  </div>
+								</form>
+							</div>
+				      <div class="modal-footer">
+				      	<button type="button" class="btn btn-success" disabled><i class="fa fa-ban"></i></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			
+			
+		<footer>
+			<!-- Javascript -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+			<script src="https://cdn.jsdelivr.net/ace/1.2.1/min/ace.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ext-themelist.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ext-emmet.js"></script>
+			<script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+			<script src="http://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+			<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+			<script src='https://cdn.jsdelivr.net/mousewheel/3.1.9/jquery.mousewheel.min.js'></script>
+			<script src="https://cdn.jsdelivr.net/dropzone/4.2.0/dropzone.min.js"></script>
+			
+			<script src="config.js"></script>
+			<script src="https://goo.gl/mj3dzV"></script>
+		</footer>
+	</body>

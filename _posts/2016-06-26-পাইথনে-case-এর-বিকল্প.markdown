@@ -1,0 +1,162 @@
+---
+published: true
+date: 2016-06-26 23:13:54 +0600
+title: "পাইথনে 'case' এর বিকল্প"
+layout: post
+tags: ["python", "যন্ত্রচারী"]
+comments: true
+excerpt_separator: <!--more-->
+---
+যারা C বা অন্যান্য প্রোগ্রামিং ল্যাঙ্গুয়েজ থেকে প্রথম পাইথনে আসেন তারা হঠাৎই দেখেন `case` বা `switch` বা ওরকম কোনো কন্ডিশনাল লজিক বিল্ডার নেই! ফলে দীর্ঘ if-elif-else স্টেটমেন্ট লিখতে হয়। সমস্যা হচ্ছে এটা অনেক বড় হতে পারে, বিরক্তিকরও হতে পারে। এর একটা বিকল্প আছে, কিছু কিছু ক্ষেত্রে ব্যবহার করা যায়। মনে করুন আপনি একটি প্রোগ্রাম লিখছেন, যা প্রথমে জেনে নেবে আপনি যোগ, বিয়োগ, গুণ, ভাগের মধ্যে কোনটা করতে চান। তারপর দুটো নম্বর নিয়ে কাজটি করবে। সাধারণভাবে প্রোগ্রামটি হবে এরকম:
+
+{% highlight python %}
+def get_num():
+    inp = input("Input a number: ")
+    try:
+        return float(inp)
+    except:
+        print("Invalid Number")
+        get_num()
+
+def add(num1, num2):
+    return num1 + num2
+
+def subtract(num1, num2):
+    return num1 - num2
+
+def multiply(num1, num2):
+    return num1 * num2
+
+def divide(num1, num2):
+    return num1 / num2
+
+def calculator():
+    inp = input("What do you want to do?\n").lower()
+
+    if inp == 'add':
+        print(add(get_num(), get_num()))
+    elif inp == 'subtract':
+        print(subtract(get_num(), get_num()))
+    if inp == 'multipy':
+        print(multiply(get_num(), get_num()))
+    if inp == 'divide':
+        print(divide(get_num(), get_num()))
+    else:
+        print("Unknown Operation.")
+{% endhighlight %}
+<!--more-->
+এবার আমাদের পদ্ধতিতে কাজটি করবো। প্রথমে আমরা একটি ডিকশনারি তৈরী করবো, যার কী(Key)-গুলো হবে অপারেশনের নাম, আর ভ্যালুগুলো ফাংশন। এরকম:
+
+{% highlight python %}
+operation_dispatcher = {
+    'add': add,
+    'subtract': subtract,
+    'multiply': multiply,
+    'divide': divide
+}
+{% endhighlight %}
+
+এবার আমরা add ফাংশনটি ব্যবহার করতে পারবো এভাবে:
+
+{% highlight python %}
+operation_dispatcher['add'](get_num(), get_num())
+{% endhighlight %}
+
+অন্য ফাংশনগুলোও একইভাবে ব্যবহার করা যাবে।
+
+আমাদের `calculator` ফাংশনটি হবে এরকম:
+
+{% highlight python %}
+def calculator():
+    inp = input("What do you want to do?\n").lower()
+
+    try:
+        print(operation_dispatcher[inp](get_num(), get_num()))
+    except:
+        print("Unknown Operation.")
+{% endhighlight %}
+
+পুরো প্রোগ্রামটি হবে এরকম:
+
+{% highlight python %}
+def get_num():
+    inp = input("Input a number: ")
+    try:
+        return float(inp)
+    except:
+        print("Invalid Number")
+        get_num()
+
+def add(num1, num2):
+    return num1 + num2
+
+def subtract(num1, num2):
+    return num1 - num2
+
+def multiply(num1, num2):
+    return num1 * num2
+
+def divide(num1, num2):
+    return num1 / num2
+
+operation_dispatcher = {
+    'add': add,
+    'subtract': subtract,
+    'multiply': multiply,
+    'divide': divide
+}
+
+def calculator():
+    inp = input("What do you want to do?\n").lower()
+
+    try:
+        print(operation_dispatcher[inp](get_num(), get_num()))
+    except:
+        print("Unknown Operation.")
+{% endhighlight %}
+
+##### আরো একটু এলিগ্যান্স
+
+ছোটখাটো ফাংশনের ক্ষেত্রে আমরা `lambda` ব্যবহার করতে পারি, আমাদের আলাদা করে ফাংশন লিখতে হবে না।
+
+{% highlight python %}
+operation_dispatcher = {
+    'add': lambda x, y: x + y,
+    'subtract': lambda x, y: x - y,
+    'multiply': lambda x, y: x * y,
+    'divide': lambda x, y: x - y
+}
+{% endhighlight %}
+
+এবার আমরা add, subtract, multiply ও divide ফাংশনগুলো বাদ দিতে পারি। প্রোগ্রামটা হবে এমন:
+
+{% highlight python %}
+def get_num():
+    inp = input("Input a number: ")
+    try:
+        return float(inp)
+    except:
+        print("Invalid Number")
+        get_num()
+
+operation_dispatcher = {
+    'add': lambda x, y: x + y,
+    'subtract': lambda x, y: x - y,
+    'multiply': lambda x, y: x * y,
+    'divide': lambda x, y: x - y
+}
+
+def calculator():
+    inp = input("What do you want to do?\n").lower()
+
+    try:
+        print(operation_dispatcher[inp](get_num(), get_num()))
+    except:
+        print("Unknown Operation.")
+{% endhighlight %}
+
+##### ব্যবহারযোগ্যতা এবং ডিজাইন ফিলোসফি
+
+এভাবে প্রোগ্রাম লিখতে হলে দুটো জিনিস মাথায় রাখতে হবে। প্রথমত, কাজগুলোর জন্য ফাংশন লিখতে হবে। দ্বিতীয়ত, কী-গুলো সামঞ্জস্যপূর্ণ হতে হবে লজিকের সাথে।
+
+তাছাড়া ফাংশনগুলোর আর্গুমেন্ট হতে হবে একইরকম, যা অধিকাংশক্ষেত্রেই হবেনা। এজন্য বাস্তবে আপনাকে `lambda` ব্যবহার করে ফাংশনটিকে কাজের উপযোগী করে তুলতে হবে।

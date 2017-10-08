@@ -1,0 +1,99 @@
+---
+title: "ক্লোজারে স্কয়ার রুট"
+date: 2015-09-26 01:17:03 +0600
+published: true
+layout: post
+tags:
+- যন্ত্রচারী
+- ক্লোজার
+- ফাংশনাল প্রোগ্রামিং
+comments: true
+excerpt_separator: <!--more-->
+---
+আমরা এখন ক্লোজারে একটি ফাংশন লিখবো যেটি একটি সঙ্খ্যার স্কয়ার রুট বা বর্গমূল বের করবে।
+
+আমার লেখা পুরো ফাংশনটি এরকম:
+
+{% highlight clojure %}
+(defn sqrt
+([x] (sqrt x 0.001))
+([x precision]
+  (letfn [(abs [x]
+           (if (< x 0)
+            (- x)
+            x))
+          (square [x]
+           (* x x))
+          (average [& args]
+           (/ (apply + args) (count args)))
+          (good-enough? [guess]
+           (< (abs (- (square guess) x)) precision))
+          (improve [guess]
+           (average guess (/ x guess)))]
+   (loop [guess 1.0]
+    (if (good-enough? guess)
+     guess
+     (recur (improve guess)))))))
+{% endhighlight %}
+<!--more-->
+এবার এটাকে ভেঙে দেখা যাক। প্রথমত এটা একটি মাল্টি-এরিটি ফাংশন। অর্থাৎ যদি শুধু সঙ্খ্যা দেওয়া হয় তবে ০.০০১ প্রেসিশনে বর্গমূল বের করবে। আর প্রেসিশন বলে দিলে সেই প্রেসিশনে। এরপর আমরা _letfn_ ব্যবহার করে কয়েকটি লোকাল ফাংশন ডিফাইন করেছি:
+
+{% highlight clojure %}
+(abs [x]
+  (if (< x 0)
+    (- x)
+    x))
+{% endhighlight %}
+
+এই ফাংশনটি একটি সঙ্খ্যার পরম মান বা এবসলিউট ভ্যালু রিটার্ন করবে।
+
+{% highlight clojure %}
+(square [x]
+  (* x x))
+
+(average [& args]
+  (/ (apply + args) (count args)))
+{% endhighlight %}
+
+_square_ এবং _average_ ফাংশনদ্বয় যথাক্রমে বর্গ ও গড় রিটার্ন করবে।
+
+{% highlight clojure %}
+(good-enough? [guess]
+  (< (abs (- (square guess) x))
+     precision))
+{% endhighlight %}
+
+এই ফাংশনটি Boolean রিটার্ন করবে। _guess_ একটি নম্বর, যেটিকে বর্গ করা হবে, তারপর তার থেকে মূল সঙ্খ্যাটি বিয়োগ করা হবে। ফলাফলের পরম মান যদি প্রেসিশন থেকে ছোট হয় তবে ট্রু, নাহলে ফলস্ রিটার্ন করবে।
+
+{% highlight clojure %}
+(improve [guess]
+  (average guess (/ x guess)))
+{% endhighlight %}
+
+এটি দিয়ে আমরা গেজ করা বর্গমূল থেকে আরো কাছের সঙ্খ্যা বের করবো। গেজ করা সঙ্খ্যা এবং মূলসঙ্খ্যাকে গেজ করা সঙ্খ্যা দ্বারা ভাগ করার ফলাফলের গড় এটি রিটার্ন করবে।
+
+এবার ফাংশনের মূল প্রসিডিউর:
+
+{% highlight clojure %}
+(loop [guess 1.0]
+  (if (good-enough? guess)
+    guess
+    (recur (improve guess))))
+{% endhighlight %}
+
+এটা একটা সাধারণ লুপ। যেটি প্রথমে বর্গমূল হিসেবে 1.0 গেজ করবে। তারপর _good-enough_ ফাংশনের সাহায্যে দেখবে গেজটি ঠিক আছে কিনা। ঠিক থাকলে ফলাফল রিটার্ন করবে। নাহলে _improve_ ফাংশনের মাধ্যমে ইম্প্রুভ করবে এবং লুপ সচল রাখবে।
+
+এবার আমরা ফাংশনটি ব্যবহার করছি:
+
+{% highlight clojure %}
+boot.user> (sqrt 3)
+1.7321428571428572
+
+boot.user> (sqrt 3 0.00001)
+1.7320508100147274
+
+boot.user> (sqrt 3 0.1)
+1.75
+{% endhighlight %}
+
+আমরা প্রথমে ডিফল্ট প্রেসিশন অর্থাৎ 0.001 প্রেসিশনে 3 এর বর্গমূল বের করলাম তারপর প্রেসিশন বাড়িয়ে ও কমিয়ে দেখলাম। 
