@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1.blog-title {
   margin: 10px 0 !important; }
   h1.blog-title::after {
@@ -42,5 +43,12 @@ h2.blog-description {
 
 img.thumbnail {
   width: 40% !important; }
+
+blockquote p::before {
+  content: " ";
+  font-family: "FontAwesome";
+  font-size: 0.5em;
+  vertical-align: text-top;
+  /* color: grey; */ }
 
 /*# sourceMappingURL=custom.css.map */
