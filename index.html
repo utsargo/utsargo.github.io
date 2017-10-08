@@ -1,0 +1,65 @@
+---
+layout: default
+title: চিন্তা
+---
+
+<main class="content" role="main">
+  {% for post in site.tags["sticky"] %}
+  <article class="preview">
+    <header>
+      <div class="sticky">
+        <i class="fa fa-bookmark" aria-hidden="true"></i>
+      </div>
+      <h1 class="post-title"><a href="{{ post.url }}">{{post.title}}</a></h1>
+      <div class="post-meta"><time class="post-date" datetime="{{ post.date }}">...</time></div>
+        </header>
+        <section class="post-excerpt">
+          {% if post.tags contains 'কবিতা' %}
+          {{ post.content }}
+          {% else %}
+          <p>{{ post.excerpt}}&hellip;</p>
+          <p class="readmore"><a href="{{post.url}}">আরো পড়ুন <i class="fa fa-chevron-circle-right"></i></a></p>
+          {% endif %}
+        </section>
+    </article>
+    {% endfor %}
+  
+  {% for post in paginator.posts %}
+  <article class="preview">
+    <header>
+      <h1 class="post-title"><a href="{{ post.url }}">{{post.title}}</a></h1>
+      <div class="post-meta"><time class="post-date" datetime="{{ post.date }}">...</time></div>
+        </header>
+        <section class="post-excerpt">
+          {% if post.tags contains 'কবিতা' %}
+          {{ post.content }}
+          {% else %}
+          <p>{{ post.excerpt}}&hellip;</p>
+          <p class="readmore"><a href="{{post.url}}">আরো পড়ুন <i class="fa fa-chevron-circle-right"></i></a></p>
+          {% endif %}
+        </section>
+    </article>
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination" role="pagination">
+      {% if paginator.previous_page %}
+      <a class="newer-posts" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-circle-left"></i> পরবর্তী</a>
+      {% else %}
+      <span class="newer-posts"><i class="fa fa-chevron-circle-left"></i> পরবর্তী</span>
+      {% endif %}
+      
+        <span class="page-number">পৃষ্ঠা {{paginator.page | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯'}} (মোট {{paginator.total_pages | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯'}}পৃষ্ঠা)</span>
+      
+        
+        {% if paginator.next_page %}
+        <a class="older-posts" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">পূর্ববর্তী <i class="fa fa-chevron-circle-right"></i></a>
+        {% else %}
+        <span class="older-posts">পূর্ববর্তী <i class="fa fa-chevron-circle-right"></i></span>
+        {% endif %}
+      </nav>
+      {% endif %}
+
+</nav>
+</div>
+</main>
