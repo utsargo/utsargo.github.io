@@ -3,14 +3,23 @@ h1.blog-title {
   h1.blog-title::after {
     content: '';
     border-top: 2px solid black;
-    width: 70px;
+    width: 100px;
     margin: auto;
     display: block;
     transition: 1s; }
   h1.blog-title:hover::after {
     border-top-color: grey;
-    width: 100px;
+    width: 140px;
     transition: 1s; }
+h1.blog-description {
+  margin: 0 !important;
+  border: none !important; }
+  h1.blog-description::after {
+    content: '';
+    border-top: 2px solid black;
+    width: 80px;
+    margin: auto;
+    display: block; }
 
 .post-excerpt p {
   text-align: justify; }

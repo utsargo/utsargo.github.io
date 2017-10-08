@@ -4,7 +4,7 @@ h1{
         &::after{
             content: '';
             border-top: 2px solid black;
-            width: 70px;
+            width: 100px;
             margin: auto;
             display: block;
             transition: 1s;
@@ -12,11 +12,22 @@ h1{
         &:hover{
             &::after{
                 border-top-color: grey;
-                width: 100px;
+                width: 140px;
                 transition: 1s;
             }
         }
 
+    }
+    &.blog-description{
+        margin: 0 !important;
+        border: none !important;
+        &::after{
+            content: '';
+            border-top: 2px solid black;
+            width: 80px;
+            margin: auto;
+            display: block;
+        }
     }
 }
 
