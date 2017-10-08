@@ -18,7 +18,7 @@ subtitle: "শতং বদ মা লিখ"
 email: royutsargo@gmail.com
 description: "আমি খুবই সহজ মানুষ। সোজা ভাবি, সোজা চলি, সোজা বলি, সোজা লিখি। কারো চিত্তবিনোদনের কোনো অভিপ্রায় নেই। যা কিছু লিখি তা আমার হৃদয়ের ছেঁড়া ছেঁড়া কথা। স্বীকারোক্তি।"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://utsargo.github.io" # the base hostname & protocol for your site
+url: "https://utsargo.github.io" # the base hostname & protocol for your site
 plugins: [jekyll-paginate]
 paginate: 5
 paginate_path: "/page:num/"
@@ -40,7 +40,7 @@ author:
   name: "উৎসর্গ রায়"
   image: "/images/me.jpg"
   bio: "সহজ লোক"
-  website: http://utsargo.github.io
+  website: https://utsargo.github.io
 
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
 sass:
