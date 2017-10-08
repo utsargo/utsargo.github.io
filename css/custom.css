@@ -1,3 +1,14 @@
+.post-excerpt h1.blog-title {
+  margin: 10px 0 !important; }
+  .post-excerpt h1.blog-title::after {
+    content: '';
+    border-top: 2px solid;
+    width: 70px;
+    margin: auto;
+    transition: 1s; }
+  .post-excerpt h1.blog-title:hover::after {
+    width: 100px;
+    transition: 1s; }
 .post-excerpt p {
   text-align: justify; }
   .post-excerpt p img {
