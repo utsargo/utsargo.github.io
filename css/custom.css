@@ -1,0 +1,9 @@
+.post-excerpt p img {
+  max-width: 33%;
+  border-radius: 0 50px;
+  transition: 2s; }
+  .post-excerpt p img:hover {
+    border-radius: 4px;
+    transition: 2s; }
+
+/*# sourceMappingURL=custom.css.map */
