@@ -43,10 +43,11 @@ h2{
             padding: 15px;
             height: auto !important;
             border-radius: 0 50px;
+            float: none !important;
+            max-height: none !important;
+            width: 100% !important;
             transition: 1s;
-            float: none;
-            max-height: none;
-            
+
             &:hover{
                 border-radius: 4px;
                 transition: 1s;
