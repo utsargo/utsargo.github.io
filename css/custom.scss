@@ -1,23 +1,24 @@
-.post-excerpt{
-    h1{
-        &.blog-title{
-            margin: 10px 0 !important;
+h1{
+    &.blog-title{
+        margin: 10px 0 !important;
+        &::after{
+            content: '';
+            border-top: 2px solid;
+            width: 70px;
+            margin: auto;
+            transition: 1s;
+        }
+        &:hover{
             &::after{
-                content: '';
-                border-top: 2px solid;
-                width: 70px;
-                margin: auto;
+                width: 100px;
                 transition: 1s;
             }
-            &:hover{
-                &::after{
-                    width: 100px;
-                    transition: 1s;
-                }
-            }
-
         }
+
     }
+}
+
+.post-excerpt{    
     p{
         text-align: justify;
         img{
