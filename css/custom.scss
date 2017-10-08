@@ -3,13 +3,15 @@ h1{
         margin: 10px 0 !important;
         &::after{
             content: '';
-            border-top: 2px solid;
+            border-top: 2px solid black;
             width: 70px;
             margin: auto;
+            display: block;
             transition: 1s;
         }
         &:hover{
             &::after{
+                border-top-color: grey;
                 width: 100px;
                 transition: 1s;
             }
