@@ -11,10 +11,11 @@ h1.blog-title {
     border-top-color: grey;
     width: 140px;
     transition: 1s; }
-h1.blog-description {
+
+h2.blog-description {
   margin: 0 !important;
   border: none !important; }
-  h1.blog-description::after {
+  h2.blog-description::after {
     content: '';
     border-top: 2px solid black;
     width: 80px;
