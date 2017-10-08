@@ -34,15 +34,14 @@ h2.blog-description {
     max-height: none !important;
     width: 100% !important;
     transition: 1s; }
+    .post-excerpt p img.thumbnail, .post-content p img.thumbnail {
+      width: 40% !important; }
     .post-excerpt p img:hover, .post-content p img:hover {
       border-radius: 4px;
       transition: 1s; }
   .post-excerpt p:first-child::first-letter, .post-content p:first-child::first-letter {
     font-size: 3em;
     color: black; }
-
-img.thumbnail {
-  width: 40% !important; }
 
 blockquote p::before {
   content: " ";
