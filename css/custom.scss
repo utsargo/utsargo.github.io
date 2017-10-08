@@ -35,7 +35,7 @@ h2{
     }
 }
 
-.post-excerpt{    
+.post-excerpt, .post-content{    
     p{
         text-align: justify;
         margin-bottom: 20px;
@@ -48,6 +48,10 @@ h2{
                 border-radius: 4px;
                 transition: 1s;
             }
+        }
+        &::first-letter{
+            font-size: 3em;
+            color: black;
         }
     }
 }
