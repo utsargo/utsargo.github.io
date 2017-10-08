@@ -1,12 +1,12 @@
 ---
-published: true
-date: 2016-07-20
 title: বান্ধবী সমাচার
-layout: post
+date: 2016-07-20 00:00:00 Z
 tags:
 - তত্ত্বতালাশ
+layout: post
 comments: true
 ---
+
 <p style="text-align: right; font-size:small; text-decoration:italic">তবুও তোমায় জেনেছি, নারি,   ইতিহাসের শেষে এসে; মানবপ্রতিভার<br>
 রূঢ়তা ও নিষ্ফলতার অধম অন্ধকারে<br>
 মানবকে নয়, নারি, শুধু তোমাকে ভালোবেসে<br>
