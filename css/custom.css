@@ -29,7 +29,9 @@ h2.blog-description {
     padding: 15px;
     height: auto !important;
     border-radius: 0 50px;
-    transition: 1s; }
+    transition: 1s;
+    float: none;
+    max-height: none; }
     .post-excerpt p img:hover, .post-content p img:hover {
       border-radius: 4px;
       transition: 1s; }

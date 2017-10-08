@@ -44,6 +44,9 @@ h2{
             height: auto !important;
             border-radius: 0 50px;
             transition: 1s;
+            float: none;
+            max-height: none;
+            
             &:hover{
                 border-radius: 4px;
                 transition: 1s;
