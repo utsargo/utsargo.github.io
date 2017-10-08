@@ -1,11 +1,13 @@
-.post-excerpt p img {
-  padding: 15px;
-  width: 33% !important;
-  height: auto !important;
-  border-radius: 0 50px;
-  transition: 1s; }
-  .post-excerpt p img:hover {
-    border-radius: 4px;
+.post-excerpt p {
+  text-align: justify; }
+  .post-excerpt p img {
+    padding: 15px;
+    width: 33% !important;
+    height: auto !important;
+    border-radius: 0 50px;
     transition: 1s; }
+    .post-excerpt p img:hover {
+      border-radius: 4px;
+      transition: 1s; }
 
 /*# sourceMappingURL=custom.css.map */
