@@ -16,7 +16,7 @@
  {% endif %}
 </script>
 <script>
-  $("img").attr("data-title", this.alt)
+  $("a[data-toggle="lightbox"]").attr("data-title", this>img.alt)
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
