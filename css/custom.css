@@ -41,9 +41,6 @@ h2.blog-description {
       opacity: .5;
       border-radius: 4px;
       transition: 1s; }
-  .post-excerpt p:first-child::first-letter, .post-content p:first-child::first-letter {
-    font-size: 3em;
-    color: black; }
 
 blockquote p::before {
   content: " ";

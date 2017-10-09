@@ -59,12 +59,7 @@ h2{
                 transition: 1s;
             }
         }
-        &:first-child{
-            &::first-letter{
-                font-size: 3em;
-                color: black;
-            }
-        }
+        
     }
 }
 
