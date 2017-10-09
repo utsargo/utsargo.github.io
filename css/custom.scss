@@ -53,6 +53,7 @@ h2{
             transition: 1s;
 
             &:hover{
+                opacity: .5;
                 border-radius: 4px;
                 transition: 1s;
             }
