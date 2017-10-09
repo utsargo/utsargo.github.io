@@ -65,4 +65,101 @@ a {
   a:focus, a:hover {
     color: #000000 !important; }
 
+/* === Navigation and Pagination === */
+nav {
+  border-bottom: 1px solid #ecf0f1 !important;
+  border-top: 1px solid #ecf0f1 !important;
+  margin-bottom: 2em !important;
+  text-align: center !important;
+  margin: 20px auto 2em auto !important;
+  max-width: 600px !important; }
+  nav ul {
+    list-style: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    text-align: center !important; }
+    nav ul li {
+      display: inline-block !important;
+      font-family: "Noto Sans Bengali UI", "Merriweather", serif !important;
+      font-size: 18px !important;
+      font-weight: 300 !important;
+      margin: 0 !important;
+      padding: 0 0.5em !important;
+      text-align: center !important;
+      text-transform: uppercase !important; }
+      nav ul li a {
+        display: block !important;
+        padding: 0.5em 0 !important; }
+  nav.pagination li:first-child {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: right !important; }
+  nav.pagination li:last-child {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important; }
+
+.menu {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  padding: 10px 0px !important;
+  font-size: 1.6em !important; }
+  .menu div {
+    margin: 0px 10px !important; }
+
+@media only screen and (min-width: 320px) and (max-width: 662px) {
+  nav.menu li {
+    display: block !important; } }
+a.archive-link {
+  border-bottom: 1px solid #ecf0f1 !important;
+  border-top: 1px solid #ecf0f1 !important;
+  display: block !important;
+  font-family: "Noto Sans Bengali UI", "Merriweather", serif !important;
+  font-size: 24px !important;
+  font-weight: 300 !important;
+  margin-bottom: 3em !important;
+  margin-top: 3em !important;
+  padding: 0.5em 0 !important;
+  text-align: center !important;
+  text-transform: uppercase !important; }
+
+.pagination {
+  position: relative !important;
+  width: 90% !important;
+  max-width: 600px !important;
+  font-family: "Noto Sans Bengali UI", "Merriweather", serif !important;
+  text-transform: uppercase !important;
+  font-size: 20px !important;
+  color: #4c5454 !important;
+  text-align: center !important;
+  padding: 0.5em 0 !important; }
+  .pagination a {
+    color: #030404 !important; }
+
+.older-posts, .newer-posts {
+  position: absolute !important;
+  display: inline-block !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  transition: color ease 0.7s !important;
+  -webkit-transition: color ease 0.7s !important; }
+
+.older-posts {
+  right: 0 !important; }
+
+.page-number {
+  display: inline-block !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.newer-posts {
+  left: 0 !important; }
+
+.older-posts:hover, .newer-posts:hover {
+  color: #000000 !important;
+  text-decoration: none !important; }
+
 /*# sourceMappingURL=custom.css.map */
