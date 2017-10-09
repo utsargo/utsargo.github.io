@@ -10,23 +10,24 @@ fimage: "/images/আমরুলি-২.jpg"
 জন্মের সময় বাপ-মা নাম রেখেছিল পঞ্চানন। শিবঠাকুরের নামে। আজ কেউ ডাকে পঁচা কেউ পাঁইচো কেউবা পেঁচা। এইই হয়। লোকে যা ডাকবে তাতেই নাম-পরিচয়। এ বেচারীরও একসময় সংস্কৃত ভাষায় নাম ছিল অম্ললোনী। এখন তার ডাকনাম আমরুল বা আমরুলি। বড়ো মনোহর দেখতে (এবং স্বাদে)। তার গুষ্টিগোত্রের তত্ত্বতালাশ পণ্ডিতরা করেছেন, আমি সেদিকে যাব না। আমার কেবল খাই-খাই স্বভাব, আমি অতএব সে পথেই যাব।
 <br>
 <div class="row">
-    <div class="col-md-12">
-        <div class="row" style="margin-bottom:20px;">
-            <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম&nbsp <i>Oxalis corniculata</i>।" data-gallery="আমরুলি" class="col-sm-6">
+    <div class="col-md-12" style="padding:10px;">
+        <div class="row">
+            <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম&nbsp <i>Oxalis corniculata</i>।" data-gallery="আমরুলি" class="col-sm-6" style="padding:10px;">
                 <img src="/images/আমরুলি-১.jpg" class="img-fluid">
             </a>
-            <a href="/images/আমরুলি-২.jpg" data-toggle="lightbox" data-title="আমরুলির পাতা" data-footer="আমরুলির পাতা। এই পাতা আর কচি  ডগাটুকুই খেতে সবচেয়ে ভাল। ছোটবেলায় মুঠো-মুঠো কচি আমরুলি তুলে নিয়ে ধুলোমাটিসুদ্ধোই ছাগলের মত চিবোতাম।" data-gallery="আমরুলি" class="col-sm-6">
+            <a href="/images/আমরুলি-২.jpg" data-toggle="lightbox" data-title="আমরুলির পাতা" data-footer="আমরুলির পাতা। এই পাতা আর কচি  ডগাটুকুই খেতে সবচেয়ে ভাল। ছোটবেলায় মুঠো-মুঠো কচি আমরুলি তুলে নিয়ে ধুলোমাটিসুদ্ধোই ছাগলের মত চিবোতাম।" data-gallery="আমরুলি" class="col-sm-6" style="padding:10px;">
                 <img src="/images/আমরুলি-২.jpg" class="img-fluid">
             </a>
         </div>
         <div class="row">
-            <a href="/images/আমরুলি-৩.jpg" data-toggle="lightbox" data-title="আমরুলির ফল" data-footer="ফলগুলো দেখতে ক্ষুদ্রকায় ঢেঁড়ষের মত। তিতকুটে স্বাদ। এই ফল বেছে ফেলে না দিলে অম্বল তেতো হয়ে যাবে। ফলঅলা শাক না আনাই বরং ভাল। ওদের বংশবৃদ্ধির জন্য ক্ষমাঘেন্না করে দেয়া উচিত।" data-gallery="আমরুলি" class="col-sm-6">
+            <a href="/images/আমরুলি-৩.jpg" data-toggle="lightbox" data-title="আমরুলির ফল" data-footer="ফলগুলো দেখতে ক্ষুদ্রকায় ঢেঁড়ষের মত। তিতকুটে স্বাদ। এই ফল বেছে ফেলে না দিলে অম্বল তেতো হয়ে যাবে। ফলঅলা শাক না আনাই বরং ভাল। ওদের বংশবৃদ্ধির জন্য ক্ষমাঘেন্না করে দেয়া উচিত।" data-gallery="আমরুলি" class="col-sm-6" style="padding:10px;">
                 <img src="/images/আমরুলি-৩.jpg" class="img-fluid">
             </a>
-            <a href="/images/আমরুলি-৪.jpg" data-toggle="lightbox" data-title="(আবারও) আমরুলির ফল" data-footer="আবার ফল। বড়ই পাজি বস্তু। তাই দুবার করে চিনিয়ে দিলাম।" data-gallery="আমরুলি" class="col-sm-6">
+            <a href="/images/আমরুলি-৪.jpg" data-toggle="lightbox" data-title="(আবারও) আমরুলির ফল" data-footer="আবার ফল। বড়ই পাজি বস্তু। তাই দুবার করে চিনিয়ে দিলাম।" data-gallery="আমরুলি" class="col-sm-6" style="padding:10px;">
                 <img src="/images/আমরুলি-৪.jpg" class="img-fluid">
             </a>
         </div>
+        <p style="text-align:right"><small>* বড় করে দেখতে হলে ছবিতে টোকা দিন</small></p>
     </div>
 </div>
 
