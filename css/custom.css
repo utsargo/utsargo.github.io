@@ -50,4 +50,17 @@ blockquote p::before {
   vertical-align: text-top;
   /* color: grey; */ }
 
+a {
+  color: #030404 !important;
+  text-decoration: none !important;
+  transition: color ease 0.7s !important;
+  -webkit-transition: color ease 0.7s !important; }
+  a:visited {
+    color: #030404 !important;
+    text-decoration: none !important;
+    transition: color ease 0.7s !important;
+    -webkit-transition: color ease 0.7s !important; }
+  a:focus, a:hover {
+    color: #000000 !important; }
+
 /*# sourceMappingURL=custom.css.map */
