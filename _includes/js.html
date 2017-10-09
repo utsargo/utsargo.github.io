@@ -18,8 +18,6 @@
 <script>
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
-    var dataTitle = $(this).children("img").attr("alt");
-    $("a[data-toggle="lightbox"]").attr("data-title", dataTitle);
     $(this).ekkoLightbox();
 });
 </script>
