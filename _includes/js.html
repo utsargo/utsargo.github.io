@@ -17,8 +17,8 @@
 </script>
 <script>
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    $("img").attr("data-title", this.alt)
     event.preventDefault();
+    $(this).attr("data-title", this.alt);
     $(this).ekkoLightbox();
 });
 </script>
