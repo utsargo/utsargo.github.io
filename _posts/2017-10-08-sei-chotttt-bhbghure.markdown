@@ -4,6 +4,7 @@ date: 2017-10-08 19:20:00 Z
 tags:
 - ফিলিম
 - চ্যাপলিন
+fimage: /uploads/Limelight-poster.jpg
 ---
 
 <p><a href="/uploads/Limelight-poster.jpg" data-toggle="lightbox" data-title="Limelight Poster"><img class="thumbnail img-fluid" src="/uploads/Limelight-poster.jpg" style="float:left;" alt="Limelight Poster"></a>ওস্তাদ যেভাবে লিখেছেন, তেমন লেখা তো আর লিখতে পারব না! আমার ওস্তাদও মজেছিলেন তার রসে। সে কথা যেরকম সরসে বয়ান করেছেন, তেমনটি আর কেউ পারবে বলে আমি বিশ্বাস করি না। তাঁর বিদেহী পদযুগলে হাজারখানেক সেলাম ঠুকে আমি একটুখানি লেখার দুঃসাহস করি। ও হ্যাঁ, আমার ওস্তাদের নাম সৈয়দ মুজতবা আলী (কানে হাত)।</p>
