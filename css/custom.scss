@@ -1,3 +1,7 @@
+*{
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif;
+}
 h1{
     &.blog-title{
         margin: 10px 0 !important;
