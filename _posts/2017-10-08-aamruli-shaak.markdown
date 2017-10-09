@@ -7,20 +7,20 @@ tags:
 fimage: "/images/আমরুলি-২.jpg"
 ---
 <div class="row">
-    <div class="offset-md-2 col-md-8">
+    <div class="offset-md-2 col-md-12">
         <div class="row">
-            <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম <i>Oxalis corniculata<i>।" data-gallery="আমরুলি" class="col-sm-4">
+            <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম <i>Oxalis corniculata<i>।" data-gallery="আমরুলি" class="col-sm-6">
                 <img src="/images/আমরুলি-১.jpg" class="img-fluid">
             </a>
-            <a href="/images/আমরুলি-২.jpg" data-toggle="lightbox" data-title="আমরুলির পাতা" data-footer="আমরুলির পাতা। এই পাতা আর কচি ডগাটুকুই খেতে সবচেয়ে ভাল। ছোটবেলায় মুঠো-মুঠো কচি আমরুলি তুলে নিয়ে ধুলোমাটিসুদ্ধোই ছাগলের মত চিবোতাম।" data-gallery="আমরুলি" class="col-sm-4">
+            <a href="/images/আমরুলি-২.jpg" data-toggle="lightbox" data-title="আমরুলির পাতা" data-footer="আমরুলির পাতা। এই পাতা আর কচি ডগাটুকুই খেতে সবচেয়ে ভাল। ছোটবেলায় মুঠো-মুঠো কচি আমরুলি তুলে নিয়ে ধুলোমাটিসুদ্ধোই ছাগলের মত চিবোতাম।" data-gallery="আমরুলি" class="col-sm-6">
                 <img src="/images/আমরুলি-২.jpg" class="img-fluid">
             </a>
         </div>
         <div class="row">
-            <a href="/images/আমরুলি-৩.jpg" data-toggle="lightbox" data-title="আমরুলির ফল" data-footer="ফলগুলো দেখতে ক্ষুদরকায় ঢেঁড়ষের মত। তিতকুটে স্বাদ। এই ফল বেছে ফেলে না দিলে অম্বল তেতো হয়ে যাবে। ফলঅলা শাক না আনাই বরং ভাল। ওদের বংশবৃদ্ধির জন্য ক্ষমাঘেন্না করে দেয়া উচিত।" data-gallery="আমরুলি" class="col-sm-4">
+            <a href="/images/আমরুলি-৩.jpg" data-toggle="lightbox" data-title="আমরুলির ফল" data-footer="ফলগুলো দেখতে ক্ষুদরকায় ঢেঁড়ষের মত। তিতকুটে স্বাদ। এই ফল বেছে ফেলে না দিলে অম্বল তেতো হয়ে যাবে। ফলঅলা শাক না আনাই বরং ভাল। ওদের বংশবৃদ্ধির জন্য ক্ষমাঘেন্না করে দেয়া উচিত।" data-gallery="আমরুলি" class="col-sm-6">
                 <img src="/images/আমরুলি-৩.jpg" class="img-fluid">
             </a>
-            <a href="/images/আমরুলি-৪.jpg" data-toggle="lightbox" data-title="(আবারও) আমরুলির ফল" ddata-footer="আবার ফল। বড়ই পাজি বস্তু। তাই দুবার করে চিনিয়ে দিলাম।" ata-gallery="আমরুলি" class="col-sm-4">
+            <a href="/images/আমরুলি-৪.jpg" data-toggle="lightbox" data-title="(আবারও) আমরুলির ফল" data-footer="আবার ফল। বড়ই পাজি বস্তু। তাই দুবার করে চিনিয়ে দিলাম।" data-gallery="আমরুলি" class="col-sm-6">
                 <img src="/images/আমরুলি-৪.jpg" class="img-fluid">
             </a>
         </div>
