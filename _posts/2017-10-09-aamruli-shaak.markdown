@@ -10,7 +10,7 @@ fimage: "/images/আমরুলি-২.jpg"
 <div class="row">
     <div class="col-md-12">
         <div class="row" style="margin-bottom:20px;">
-            <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম <i>Oxalis corniculata<i>।" data-gallery="আমরুলি" class="col-sm-6">
+            <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম&nbsp <i>Oxalis corniculata</i>।" data-gallery="আমরুলি" class="col-sm-6">
                 <img src="/images/আমরুলি-১.jpg" class="img-fluid">
             </a>
             <a href="/images/আমরুলি-২.jpg" data-toggle="lightbox" data-title="আমরুলির পাতা" data-footer="আমরুলির পাতা। এই পাতা আর কচি  ডগাটুকুই খেতে সবচেয়ে ভাল। ছোটবেলায় মুঠো-মুঠো কচি আমরুলি তুলে নিয়ে ধুলোমাটিসুদ্ধোই ছাগলের মত চিবোতাম।" data-gallery="আমরুলি" class="col-sm-6">
