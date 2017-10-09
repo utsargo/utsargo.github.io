@@ -3,6 +3,19 @@
   -webkit-font-smoothing: subpixel-antialiased !important;
   font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif !important; }
 
+body {
+  background-color: #fafafa !important;
+  color: #4c5454 !important;
+  font-size: 15px !important;
+  font-weight: 100 !important;
+  line-height: 1.6em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif !important; }
+  body * {
+    max-height: 1000000em; }
+
 h1.blog-title {
   margin: 10px 0 !important; }
   h1.blog-title::after {
