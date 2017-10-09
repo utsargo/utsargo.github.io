@@ -8,7 +8,7 @@ fimage: "/images/আমরুলি-২.jpg"
 ---
 
 <div class="row">
-    <div class="offset-md-2 col-md-12">
+    <div class="col-md-12">
         <div class="row">
             <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম <i>Oxalis corniculata<i>।" data-gallery="আমরুলি" class="col-sm-6">
                 <img src="/images/আমরুলি-১.jpg" class="img-fluid">
