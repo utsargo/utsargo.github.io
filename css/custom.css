@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
-  -webkit-font-smoothing: subpixel-antialiased;
-  font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif; }
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif !important; }
 
 h1.blog-title {
   margin: 10px 0 !important; }
