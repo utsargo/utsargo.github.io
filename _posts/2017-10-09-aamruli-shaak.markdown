@@ -10,7 +10,7 @@ fimage: "/images/আমরুলি-২.jpg"
 জন্মের সময় বাপ-মা নাম রেখেছিল পঞ্চানন। শিবঠাকুরের নামে। আজ কেউ ডাকে পঁচা কেউ পাঁইচো কেউবা পেঁচা। এইই হয়। লোকে যা ডাকবে তাতেই নাম-পরিচয়। এ বেচারীরও একসময় সংস্কৃত ভাষায় নাম ছিল অম্ললোনী। এখন তার ডাকনাম আমরুল বা আমরুলি। বড়ো মনোহর দেখতে (এবং স্বাদে)। তার গুষ্টিগোত্রের তত্ত্বতালাশ পণ্ডিতরা করেছেন, আমি সেদিকে যাব না। আমার কেবল খাই-খাই স্বভাব, আমি অতএব সে পথেই যাব।
 <br>
 <div class="row">
-    <div class="col-md-12" style="padding:10px;">
+    <div class="col-md-12" style="padding: 30px;background: rgba(0, 0, 0, 0.26);border-radius: 4px;">
         <div class="row">
             <a href="/images/আমরুলি-১.jpg" data-toggle="lightbox" data-title="সপুষ্প আমরুলি" data-footer="ফুল্ল অম্ললোনী। বৈজ্ঞানিক নাম&nbsp <i>Oxalis corniculata</i>।" data-gallery="আমরুলি" class="col-sm-6" style="padding:10px;">
                 <img src="/images/আমরুলি-১.jpg" class="img-fluid">
@@ -27,7 +27,7 @@ fimage: "/images/আমরুলি-২.jpg"
                 <img src="/images/আমরুলি-৪.jpg" class="img-fluid">
             </a>
         </div>
-        <p style="text-align:right"><small>* বড় করে দেখতে হলে ছবিতে টোকা দিন</small></p>
+        <p style="text-align:right;color: black;margin-bottom: 0;"><small>* বড় করে দেখতে হলে ছবিতে টোকা দিন</small></p>
     </div>
 </div>
 
