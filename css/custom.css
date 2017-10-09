@@ -35,8 +35,10 @@ h2.blog-description {
     width: 100% !important;
     transition: 1s; }
     .post-excerpt p img.thumbnail, .post-content p img.thumbnail {
-      width: 40% !important; }
+      width: 40% !important;
+      float: left; }
     .post-excerpt p img:hover, .post-content p img:hover {
+      opacity: .5;
       border-radius: 4px;
       transition: 1s; }
   .post-excerpt p:first-child::first-letter, .post-content p:first-child::first-letter {
