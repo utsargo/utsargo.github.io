@@ -92,11 +92,11 @@ nav {
       nav ul li a {
         display: block !important;
         padding: 0.5em 0 !important; }
-  nav.pagination li:first-child {
+  nav.myPagination li:first-child {
     margin-left: 0 !important;
     margin-right: 0 !important;
     text-align: right !important; }
-  nav.pagination li:last-child {
+  nav.myPagination li:last-child {
     margin-left: 0 !important;
     margin-right: 0 !important;
     text-align: left !important; }
@@ -126,7 +126,7 @@ a.archive-link {
   text-align: center !important;
   text-transform: uppercase !important; }
 
-.pagination {
+.myPagination {
   position: relative !important;
   width: 90% !important;
   max-width: 600px !important;
@@ -136,7 +136,7 @@ a.archive-link {
   color: #4c5454 !important;
   text-align: center !important;
   padding: 0.5em 0 !important; }
-  .pagination a {
+  .myPagination a {
     color: #030404 !important; }
 
 .older-posts, .newer-posts {

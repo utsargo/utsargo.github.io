@@ -88,7 +88,7 @@ layout: default
   {% endfor %}
 
   {% if paginator.total_pages > 1 %}
-  <nav class="pagination" role="pagination">
+  <nav class="myPagination" role="pagination">
     {% if paginator.previous_page %}
     <a class="newer-posts" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left"></i> পরবর্তী</a>
     {% else %}
@@ -104,7 +104,7 @@ layout: default
     <span class="older-posts">পূর্ববর্তী <i class="fa fa-chevron-right"></i></span>
     {% endif %}
   </nav>
-  <nav class="pagination" role="pagination">
+  <nav class="myPagination" role="pagination">
     {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
     <em>{{ page | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯' }}</em>
