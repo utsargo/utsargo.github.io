@@ -50,9 +50,9 @@ comments: true
 "আমি দাম দিয়ে কিনেছি বাংলা
 কারোর দানে পাওয়া নয়...."
 
-<div class="noStyle" style="mrgin:auto;">
+
 <img src="/images/bottle2.png" align="center" width="200px" height="auto" style="border-radius: 0 !important;">
-</div>
+
 
 
 Dec 27, 2016, 3:02 PM
