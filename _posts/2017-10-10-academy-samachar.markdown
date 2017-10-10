@@ -1,12 +1,14 @@
 ---
-title: আকাদেমি সমাচার
+title: "আকাদেমি সমাচার"
 date: 2017-10-10 14:20:00 +06:00
+published: true
 layout: post
 tags:
 - রঙ্গ
 - কেরিকেচার
 - বাঁকা কথা
 fimage: "/images/কাক্কেশ্বর.png"
+comments: true
 ---
 
 <a href="/images/কাক্কেশ্বর.png" data-toggle="lightbox" data-title="শ্রী কাক্কেশ্বর কুচকুচে"><img class="thumbnail img-fluid" src="/images/কাক্কেশ্বর.png" style="float:left;" alt="/images/কাক্কেশ্বর.png"></a>দুপুরবেলা চাট্টি খাওয়ার পরে পোষ মাসে বেশ একটু শীত-শীত করে। লেপের মধ্যে হাত-পা সেঁধিয়ে বেশ একটু মটকা মেরে পড়ে থাকতে নেহাত মন্দ লাগে না। আজকে দুপুরেও সেই আয়োজনই হচ্ছিল। খাওয়াটাও হয়েছে বেড়ে! পুঁই শাকের মিচলির চচ্চড়ি, মৌরলার ঝোল আর আমরুলি শাকের তোফা একটা অম্বল দিয়ে চাট্টি গরম ভাত খেয়ে যেই না লেপ মুড়ি দেবার উদ্‌যোগ কচ্ছি, এমন সময়, কে যেন ভাঙা-ভাঙা ভারী মোটা গলায় ডেকে উঠল, "কাআআআ!"
@@ -52,6 +54,7 @@ fimage: "/images/কাক্কেশ্বর.png"
 <div class="noStyle" style="mrgin:auto;">
 <img src="/images/bottle2.png" align="center" width="200px" height="auto" style="border-radius: 0 !important;">
 </div>
+
 
 Dec 27, 2016, 3:02 PM
 খুলনা
