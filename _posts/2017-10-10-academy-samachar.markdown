@@ -1,12 +1,11 @@
 ---
 title: "আকাদেমি সমাচার"
 date: 2017-10-10 14:20:00 +06:00
-published: true
-layout: post
 tags:
 - রঙ্গ
 - কেরিকেচার
 - বাঁকা কথা
+layout: post
 fimage: "/images/কাক্কেশ্বর.png"
 comments: true
 ---
