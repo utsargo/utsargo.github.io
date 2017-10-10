@@ -77,7 +77,7 @@ a {
     transition: color ease 0.7s !important;
     -webkit-transition: color ease 0.7s !important; }
   a:focus, a:hover {
-    color: #000000 !important; }
+    color: #4c5454 !important; }
 
 /* === Navigation and Pagination === */
 nav {
