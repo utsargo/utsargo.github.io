@@ -1,6 +1,6 @@
 ---
 title: আকাদেমি সমাচার
-date: 2017-10-10 14:20:00 +06:00
+date: 2016-12-27 14:20:00 +06:00
 tags:
 - রঙ্গ
 - কেরিকেচার
@@ -53,7 +53,3 @@ comments: true
 
 <img src="/images/bottle2.png" style="border-radius: 0 !important; width: 200px !important; text-align: center;">
 
-
-
-<p style="text-align:right"><small>ডিসেম্বর ২৭, ২০১৬<br>
-খুলনা</small></p>
