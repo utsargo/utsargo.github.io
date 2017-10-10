@@ -51,9 +51,9 @@ comments: true
 কারোর দানে পাওয়া নয়...."
 
 
-<img src="/images/bottle2.png" align="center" width="200px" height="auto" style="border-radius: 0 !important;">
+<img src="/images/bottle2.png" style="border-radius: 0 !important; width: 200px;">
 
 
 
-Dec 27, 2016, 3:02 PM
-খুলনা
+<p style="text-align:right"><small>ডিসেম্বর ২৭, ২০১৬<br>
+খুলনা</small></p>
