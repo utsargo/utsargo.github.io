@@ -51,7 +51,7 @@ comments: true
 কারোর দানে পাওয়া নয়...."
 
 
-<img src="/images/bottle2.png" style="border-radius: 0 !important; width: 200px;">
+<img src="/images/bottle2.png" style="border-radius: 0 !important; width: 200px; text-align: center">
 
 
 
