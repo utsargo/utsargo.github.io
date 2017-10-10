@@ -31,11 +31,11 @@ h1.blog-title {
     transition: 1s; }
 
 h2.blog-description {
-  margin: 10px !important;
+  margin: 10px 0 20px 0 !important;
   border: none !important; }
   h2.blog-description::after {
     content: '';
-    border-top: 2px solid black;
+    border-top: 2px solid;
     width: 80px;
     margin: auto;
     display: block; }
