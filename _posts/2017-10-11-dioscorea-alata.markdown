@@ -11,7 +11,7 @@ comments: true
 
 বাঙাল মুলুকে গোল আলুর ইতিহাস খুব বেশিদিনের না। ওলন্দাজটা এনেছিলো গোল আলু। এই তো সেদিন, বিজ্ঞানী জগদীশ বোস রবীন্দ্রনাথকে বললেন যে একটা নতুন তরকারি চাষ করেছেন, খেতে নাকি খুবই ভাল। তারপর রবীন্দ্রনাথও আলু করলেন (সূত্র- প্রথম আলো, সুনীল গঙ্গোপাধ্যায়)। তার আগ অব্দি আলু মানে মেটে আলু। মেটে আলু আমাদের খাঁটি দিশি আলু। এশিয়ার ক্রান্তীয় অঞ্চলে এর উদ্ভব। ক্রান্তীয় অঞ্চল মানে যে সব অঞ্চল দিয়ে কর্কটক্রান্তি (২৩.৫° উত্তর অক্ষরেখা) বা মকরক্রান্তি (২৩.৫° দক্ষিণ অক্ষরেখা) চলে গেছে। আমাদের দেশের ঠিক বুকের উপর দিয়ে গেছে কর্কটক্রান্তি। সে হিসেবে… ধুত্তোরি ছাই! আসল কথা আগে বলে নিই। পেটভরে খেলে মাথা ঠিক থাকে না। ফালতু বকবকানিতে পেয়ে বসে।
 <div class="row">
-    <div class="col-md-12" style="padding: 30px;background: rgba(0, 0, 0, 0.26);border-radius: 4px;" style="float: right;">
+    <div class="col-md-12" style="padding: 30px;background: rgba(0, 0, 0, 0.26);border-radius: 4px; float: right;">
         <div class="col-sm-6">
             <a href="/images/আলু-গাছ.jpg" data-toggle="lightbox" data-title="আলু গাছ" data-footer="<i>Dioscorea alata" data-gallery="মেটে আলু" style="padding:10px;">
                 <img src="/images/আলু-গাছ.jpg" class="img-fluid" style="padding:10px;">
