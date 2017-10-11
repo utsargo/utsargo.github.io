@@ -17,7 +17,7 @@ comments: true
                 <img src="/images/আলু-গাছ.jpg" class="img-fluid">
             </a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" style="float: right;">
             <a href="/images/আলুর-বিচি.jpg" data-toggle="lightbox" data-title="আলুর বিচি" data-footer="এটা গাছে ঝুলে থাকে। পুড়িয়ে খেতাম ছোটবেলায়।" data-gallery="মেটে আলু" style="padding:10px;">
                 <img src="/images/আলুর-বিচি.jpg" class="img-fluid">
             </a>
