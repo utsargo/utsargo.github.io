@@ -13,15 +13,15 @@ comments: true
 <div class="row">
     <div class="col-md-12" style="padding: 30px;background: rgba(0, 0, 0, 0.26);border-radius: 4px;">
         <div class="col-sm-6"  style="float: left;">
-            <a href="/images/আলু-গাছ.jpg" data-toggle="lightbox" data-title="আলু গাছ" data-footer="<i>Dioscorea alata" data-gallery="মেটে আলু" style="padding:10px;">
+            <a href="/images/আলু-গাছ.jpg" data-toggle="lightbox" data-title="আলু গাছ" data-footer="<i>Dioscorea alata" data-gallery="মেটে আলু">
                 <img src="/images/আলু-গাছ.jpg" class="img-fluid" style="padding:10px;">
             </a>
         </div>
         <div class="col-sm-6" style="float: right;">
-            <a href="/images/আলুর-বিচি.jpg" data-toggle="lightbox" data-title="আলুর বিচি" data-footer="এটা গাছে ঝুলে থাকে। পুড়িয়ে খেতাম ছোটবেলায়।" data-gallery="মেটে আলু" style="padding:10px;">
+            <a href="/images/আলুর-বিচি.jpg" data-toggle="lightbox" data-title="আলুর বিচি" data-footer="এটা গাছে ঝুলে থাকে। পুড়িয়ে খেতাম ছোটবেলায়।" data-gallery="মেটে আলু">
                 <img src="/images/আলুর-বিচি.jpg" class="img-fluid" style="padding:10px;">
             </a>
-            <a href="/images/মেটে-আলু.jpg" data-toggle="lightbox" data-title="মেটে আলু" data-gallery="আমরুলি" style="padding:10px;">
+            <a href="/images/মেটে-আলু.jpg" data-toggle="lightbox" data-title="মেটে আলু" data-gallery="মেটে আলু">
                 <img src="/images/মেটে-আলু.jpg" class="img-fluid" style="padding:10px;">
             </a>
         </div>
