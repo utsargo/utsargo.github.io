@@ -13,7 +13,7 @@ email: royutsargo@gmail.com
 description: আমি খুবই সহজ মানুষ। সোজা ভাবি, সোজা চলি, সোজা বলি, সোজা লিখি। কারো চিত্তবিনোদনের
   কোনো অভিপ্রায় নেই। যা কিছু লিখি তা আমার হৃদয়ের ছেঁড়া ছেঁড়া কথা। স্বীকারোক্তি।
 baseurl: ''
-url: https://utsargo.work
+url: https://blog.utsargo.work
 plugins:
 - jekyll-paginate
 paginate: 5
@@ -33,7 +33,7 @@ author:
   name: উৎসর্গ রায়
   image: "/images/me.jpg"
   bio: সহজ লোক
-  website: https://utsargo.work
+  website: https://blog.utsargo.work
 exclude:
 - README.md
 - Gemfile
