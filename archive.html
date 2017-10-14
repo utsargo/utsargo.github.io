@@ -22,7 +22,7 @@ layout: page
       {% for tag in stags %}
       <li class="cloud-item" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
         <a href="#{{ tag | first | slugize }}">
-          {{ tag | first }}({{ tag | size }})
+          {{ tag | first }}({{ site.tags[tag] | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }})
         </a>
       </li>
       {% endfor %}
