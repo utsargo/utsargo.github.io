@@ -190,4 +190,9 @@ a.archive-link {
 .archive-group {
   padding: 25px 0 !important; }
 
+p.post-count {
+  font-size: 2em; }
+  p.post-count b {
+    font-weight: bold; }
+
 /*# sourceMappingURL=custom.css.map */
