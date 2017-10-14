@@ -17,7 +17,7 @@ layout: page
 
       <div id="search-results"></div>
     </section>
-    <p>মোট <b>{{ site.tags | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }}টি</b> বিষয়ে <b>{{ site.posts | size }}টি</b> পোস্ট
+    
     <ul class="tag-cloud">
       {% for tag in stags %}
       <li class="cloud-item" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
@@ -27,6 +27,7 @@ layout: page
       </li>
       {% endfor %}
     </ul>
+    <p>মোট <b>{{ site.tags | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }}টি</b> বিষয়ে <b>{{ site.posts | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }}টি</b> পোস্ট
     <div id="archives">
       {% for tag in stags %}
       <div class="archive-group">
