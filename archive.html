@@ -22,7 +22,7 @@ layout: page
       {% for tag in stags %}
       <li class="cloud-item" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
         <a href="#{{ tag | first | slugize }}">
-          {{ tag | first }}({{ site.categories.CAT | size }})
+          {{ tag | first }}({{ site.tags.CAT | size }})
         </a>
       </li>
       {% endfor %}
