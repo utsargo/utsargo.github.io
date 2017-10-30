@@ -1,8 +1,8 @@
 @charset "UTF-8";
-body {
-  -webkit-font-smoothing: subpixel-antialiased !important;
-  font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif !important; }
-
+/*{
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif !important;
+}*/
 body {
   background-color: #fafafa !important;
   color: #4c5454 !important;
