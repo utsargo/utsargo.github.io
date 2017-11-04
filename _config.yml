@@ -71,3 +71,10 @@ gems:
 - jekyll-paginate
 - jekyll-sass
 - jekyll-sitemap
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
