@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main class="content" role="main">
+  <article class="post">
+        <header>
+          <h1 class="post-title">{{page.title}}</h1>
+          <div class="post-meta">{% if page.date %}<time class="post-date" datetime="{{ page.date }}">...</time>{% endif %}</div>
+        </header>
+
+        <section class="post-content">
+          {{ content }}
+        </section>
+        <div class="article-footer">
+          {% include share.html %}
+        </div>
+        
+        <footer class="post-footer">
+
+            {% if site.author %}
+          <!-- <section class="author">
+               <div class="authorimage" style="background: url({{site.author.image}})"></div>
+               <p class="attr">লেখক</p>
+               <h4><a href="{{site.author.website}}">{{site.author.name}}</a></h4>
+               <p class="bio">{{site.author.bio}}</p>
+               </section> -->
+            {% endif %}
+
+        </footer>
+    </article>
+
+</main>

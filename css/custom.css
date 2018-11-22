@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/*{
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif !important;
+}*/
+body {
+  background-color: #fafafa !important;
+  color: #4c5454 !important;
+  font-size: 15px !important;
+  font-weight: 100 !important;
+  line-height: 1.6em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  font-family: "Noto Sans Bengali UI", "Merriweather", "Open Sans", serif !important; }
+  body * {
+    max-height: 1000000em; }
+
+h1.blog-title {
+  margin: 10px 0 !important; }
+  h1.blog-title::after {
+    content: '';
+    border-top: 2px solid black;
+    width: 100px;
+    margin: auto;
+    display: block;
+    transition: 1s; }
+  h1.blog-title:hover::after {
+    border-top-color: grey;
+    width: 140px;
+    transition: 1s; }
+
+h2.blog-description {
+  margin: 10px 0 20px 0 !important;
+  border: none !important; }
+  h2.blog-description::after {
+    content: '';
+    border-top: 2px solid;
+    width: 80px;
+    margin: auto;
+    display: block; }
+
+.post-excerpt p, .post-content p {
+  text-align: justify;
+  margin-bottom: 20px; }
+  .post-excerpt p img, .post-content p img {
+    padding: 15px;
+    height: auto !important;
+    border-radius: 0 50px;
+    float: none;
+    max-height: none !important;
+    width: 100% !important;
+    transition: 1s; }
+    .post-excerpt p img.thumbnail, .post-content p img.thumbnail {
+      width: 40% !important;
+      float: left; }
+    .post-excerpt p img:hover, .post-content p img:hover {
+      opacity: .5;
+      border-radius: 4px;
+      transition: 1s; }
+
+blockquote p::before {
+  content: " ";
+  font-family: "FontAwesome";
+  font-size: 0.5em;
+  vertical-align: text-top;
+  /* color: grey; */ }
+
+a {
+  color: #030404 !important;
+  text-decoration: none !important;
+  transition: color ease 0.7s !important;
+  -webkit-transition: color ease 0.7s !important; }
+  a:visited {
+    color: #030404 !important;
+    text-decoration: none !important;
+    transition: color ease 0.7s !important;
+    -webkit-transition: color ease 0.7s !important; }
+  a:focus, a:hover {
+    color: #4c5454 !important; }
+
+/* === Navigation and Pagination === */
+nav {
+  border-bottom: 1px solid #ecf0f1 !important;
+  border-top: 1px solid #ecf0f1 !important;
+  margin-bottom: 2em !important;
+  text-align: center !important;
+  margin: 20px auto 2em auto !important;
+  max-width: 600px !important; }
+  nav ul {
+    list-style: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    text-align: center !important; }
+    nav ul li {
+      display: inline-block !important;
+      font-family: "Noto Sans Bengali UI", "Merriweather", serif !important;
+      font-size: 18px !important;
+      font-weight: 300 !important;
+      margin: 0 !important;
+      padding: 0 0.5em !important;
+      text-align: center !important;
+      text-transform: uppercase !important; }
+      nav ul li a {
+        display: block !important;
+        padding: 0.5em 0 !important; }
+  nav.myPagination li:first-child {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: right !important; }
+  nav.myPagination li:last-child {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important; }
+
+.menu {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  padding: 10px 0px !important;
+  font-size: 1.6em !important; }
+  .menu div {
+    margin: 0px 10px !important; }
+
+@media only screen and (min-width: 320px) and (max-width: 662px) {
+  nav.menu li {
+    display: block !important; } }
+a.archive-link {
+  border-bottom: 1px solid #ecf0f1 !important;
+  border-top: 1px solid #ecf0f1 !important;
+  display: block !important;
+  font-family: "Noto Sans Bengali UI", "Merriweather", serif !important;
+  font-size: 24px !important;
+  font-weight: 300 !important;
+  margin-bottom: 3em !important;
+  margin-top: 3em !important;
+  padding: 0.5em 0 !important;
+  text-align: center !important;
+  text-transform: uppercase !important; }
+
+.myPagination {
+  position: relative !important;
+  width: 90% !important;
+  max-width: 600px !important;
+  font-family: "Noto Sans Bengali UI", "Merriweather", serif !important;
+  text-transform: uppercase !important;
+  font-size: 20px !important;
+  color: #4c5454 !important;
+  text-align: center !important;
+  padding: 0.5em 0 !important; }
+  .myPagination a {
+    color: #030404 !important; }
+
+.older-posts, .newer-posts {
+  position: absolute !important;
+  display: inline-block !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  transition: color ease 0.7s !important;
+  -webkit-transition: color ease 0.7s !important; }
+
+.older-posts {
+  right: 0 !important; }
+
+.page-number {
+  display: inline-block !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.newer-posts {
+  left: 0 !important; }
+
+.older-posts:hover, .newer-posts:hover {
+  color: #000000 !important;
+  text-decoration: none !important; }
+
+.icon-ghost, .icon-feed {
+  font-family: "icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased !important;
+  text-decoration: none !important; }
+
+.archive-group {
+  padding: 25px 0 !important; }
+
+p.post-count {
+  font-size: 2em; }
+  p.post-count b {
+    font-weight: bold; }
+
+/*# sourceMappingURL=custom.css.map */

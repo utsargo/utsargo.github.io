@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<main class="content" role="main">
+  <article class="post">
+    <header>
+      {% if page.fimage %}
+      {% endif %}
+      {% if page.tags %}
+      <div class="post-meta tags">ট্যাগসমূহ: {{ page.tags | join: ', ' }}</div>
+      {% endif %}
+      <h1 class="post-title">{{page.title}}</h1>
+      <div class="post-meta"><time class="post-date op-published" datetime="{{ page.date | date_to_xmlschema }}">...</time></div>
+    </header>
+
+    <section class="post-content">
+      {{ page.content }}
+      {% if page.tags contains "অপলাপ" %}
+      <p class="opolap">
+        ‘অপলাপ’ সংকলনের লেখামাত্রই অপলাপ নয়। জ্ঞানত অপলাপে আমার রুচি নেই। শুধু এই কথাটাই বলতে চাই যে আমার সত্য স্বাভাবিকভাবেই আমার দেখার রঙে রাঙানো। তা আমার কাছে যৌক্তিক। সে সত্য সার্বজনীন সত্যের মাপকাঠিতে মিথ্যা প্রমাণিত হতে পারে। এ তো বৈজ্ঞানিক তত্ত্ব নয়, এ হলো আমার স্মৃতি যা সবসময়ই দুর্বল। সে দুর্বলতার ফাঁকগুলো আবেগের রঙ দিয়ে নিজের অজ্ঞাতেই পূরণ করতে পারি।
+      </p>
+      {% endif %}
+    </section>
+    <div class="article-footer">
+      {% include share.html %}
+      <section class="meta">
+        {% if page.orig_date or page.location %}
+        <div class="post-meta-bottom">{% if page.orig_date %}<time class="post-date bottom-meta" datetime="{{ page.orig_date | date_to_xmlschema }}">...</time>{% endif %}
+          {% if page.location %}<div class="bottom-meta">{{ page.location }}</div>{% endif %}
+        </div>
+        {% endif %}
+      </section>
+    </div>          
+    <!-- <footer class="post-footer">
+         {% if site.author %}
+         <section class="author">
+         <div class="authorimage" style="background: url({{site.author.image}})"></div>
+         <p class="attr">লেখক</p>
+         <h4><a href="{{site.author.website}}">{{site.author.name}}</a></h4>
+         <p class="bio">{{site.author.bio}}</p>
+         </section>
+         {% endif %}
+
+         </footer> -->
+        <section>
+          {% include disqus.html %}
+        </section>
+    </article>
+</main>

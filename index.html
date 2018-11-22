@@ -1,0 +1,120 @@
+---
+title: আদ্যপান্ত
+layout: default
+---
+
+<main class="content" role="main">
+  {% if paginator.page == 1%}
+  {% for post in site.tags["sticky"] %}
+  <article class="preview">
+    <header>
+      <div class="sticky">
+        <i class="fa fa-bookmark" aria-hidden="true"></i>
+      </div>
+      <h1 class="post-title"><a href="{{ post.url }}">{{post.title}}</a></h1>
+      <div class="post-meta"><time class="post-date" datetime="{{ post.date | date_to_xmlschema}}">...</time></div>
+    </header>
+    <section class="post-excerpt">
+      {% if post.excerpt_separator %}
+      <p>{{ post.excerpt}}&hellip;</p>
+      {% else %}
+      {{ post.content }}
+      {% endif %}
+    </section>
+    {% if post.excerpt_separator %}
+    <p class="readmore"><a href="{{post.url}}">আরো পড়ুন <i class="fa fa-chevron-right"></i></a></p>
+    {% endif %}
+    <div class="article-footer">
+      <section class="social-icons-post index-social">
+        <div class="social-icon">
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ post.url }}"
+             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+          <a href="http://twitter.com/share?text={{post.title}}&url={{site.url}}{{ post.url }}"
+             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://plus.google.com/share?url={{site.url}}{{ post.url }}"
+             onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
+      </section>
+      <section class="meta">
+        {% if post.orig_date or post.location %}
+        <div class="post-meta-bottom">{% if post.orig_date %}<time class="post-date bottom-meta" datetime="{{ post.orig_date | date_to_xmlschema }}">...</time>{% endif %}
+          {% if post.location %}<div class="bottom-meta">{{ post.location }}</div>{% endif %}
+        </div>
+        {% endif %}
+      </section>
+    </div>
+  </article>
+  {% endfor %}
+  {% endif %}
+
+  {% for post in paginator.posts %}
+  {% if post.layout != "redirected" %}
+  <article class="preview">
+    <header>
+      <h1 class="post-title"><a href="{{ post.url }}">{{post.title}}</a></h1>
+      <div class="post-meta"><time class="post-date" datetime="{{ post.date | date_to_xmlschema}}">...</time></div>
+    </header>
+    <section class="post-excerpt">
+      {% if post.excerpt_separator %}
+      <p>{{ post.excerpt}}&hellip;</p> 
+      {% else %}
+      {{ post.content }}
+      {% endif %}
+    </section>
+    {% if post.excerpt_separator %}
+    <p class="readmore"><a href="{{post.url}}">আরো পড়ুন <i class="fa fa-chevron-right"></i></a></p>
+    {% endif %}
+    <div class="article-footer">
+      <section class="social-icons-post index-social">
+        <div class="social-icon">
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ post.url }}"
+             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+          <a href="http://twitter.com/share?text={{post.title}}&url={{site.url}}{{ post.url }}"
+             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://plus.google.com/share?url={{site.url}}{{ post.url }}"
+             onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
+      </section>
+      <section class="meta">
+        {% if post.orig_date or post.location %}
+        <div class="post-meta-bottom">{% if post.orig_date %}<time class="post-date bottom-meta" datetime="{{ post.orig_date | date_to_xmlschema }}">...</time>{% endif %}
+          {% if post.location %}<div class="bottom-meta">{{ post.location }}</div>{% endif %}
+        </div>
+        {% endif %}
+      </section>
+    </div>
+  </article>
+  {% endif %}
+  {% endfor %}
+
+  {% if paginator.total_pages > 1 %}
+  <nav class="myPagination" role="pagination">
+    {% if paginator.previous_page %}
+    <a class="newer-posts" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left"></i> পরবর্তী</a>
+    {% else %}
+    <span class="newer-posts"><i class="fa fa-chevron-left"></i> পরবর্তী</span>
+    {% endif %}
+
+    <span class="page-number">পৃষ্ঠা {{paginator.page | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯'}} (মোট {{paginator.total_pages | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯'}}পৃষ্ঠা)</span>
+
+
+    {% if paginator.next_page %}
+    <a class="older-posts" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">পূর্ববর্তী <i class="fa fa-chevron-right"></i></a>
+    {% else %}
+    <span class="older-posts">পূর্ববর্তী <i class="fa fa-chevron-right"></i></span>
+    {% endif %}
+  </nav>
+  <nav class="myPagination" role="pagination">
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <em>{{ page | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯' }}</em>
+    {% elsif page == 1 %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯'}}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | replace: '0', '০' | replace: '1', '১' | replace: '2', '২' | replace: '3', '৩' | replace: '4', '৪' | replace: '5', '৫' | replace: '6', '৬' | replace: '7', '৭' | replace: '8', '৮' | replace: '9', '৯'}}</a>
+  {% endif %}
+  {% endfor %}
+  </nav>
+  {% endif %}
+  </div>
+</main>

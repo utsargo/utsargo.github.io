@@ -1,0 +1,48 @@
+---
+title: ভাঁড়ার
+permalink: "/archive/"
+layout: page
+---
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.6.1/fuse.min.js"></script>
+{% assign stags = site.tags | sort %}
+<main class="content" role="main">
+  <article class="preview">
+    <section class="search-section">
+      <form id="search">
+        <input type="text" id="search-box" name="query" placeholder="খুঁজুন...">
+        <div class="search-btn fa fa-search"></div>
+      </form>
+
+      <div id="search-results"></div>
+    </section>
+    
+    <ul class="tag-cloud">
+      {% for tag in stags %}
+      <li class="cloud-item" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
+        <a href="#{{ tag | first | slugize }}">
+          {{ tag | first }}({{ tag | last | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }})
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="post-count">মোট <b>{{ site.tags | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }}টি</b> বিষয়ে <b>{{ site.posts | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }}টি</b> পোস্ট</p>
+    <div id="archives">
+      {% for tag in stags %}
+      <div class="archive-group">
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <h3 id="#{{ tag_name | slugize }}">{{ tag_name }}({{ tag | last | size | replace:'1','১' | replace:'2','২' | replace:'3','৩' | replace:'4','৪' | replace:'5','৫' | replace:'6','৬' | replace:'7','৭' | replace:'8','৮' | replace:'9','৯' | replace:'0','০' }})</h3>
+        <a name="{{ tag_name | slugize }}"></a>
+        {% assign sposts =  site.tags[tag_name] | sort: 'title' %}
+        {% for post in sposts %}
+        <article class="archive-item">
+          <h4><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
+        </article>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+</main>
+<script src="/js/search.js"></script>

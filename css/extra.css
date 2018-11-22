@@ -1,0 +1,15 @@
+.bg-paper{
+    background: #f7f7fd;
+    background: -webkit-linear-gradient(top, #e0e3e4 0%, #f7f7fd 8%) 0 4px;
+    background: -webkit-linear-gradient(top, #d9eaf3 0%, #f7f7fd 8%) 0 4px;
+    background: -moz-linear-gradient(top, #d9eaf3 0%, #f7f7fd 8%) 0 4px;
+    background: -ms-linear-gradient(top, #d9eaf3 0%, #f7f7fd 8%) 0 4px;
+    background: -o-linear-gradient(top, #d9eaf3 0%, #f7f7fd 8%) 0 4px;
+    background: linear-gradient(top, #d9eaf3 0%, #f7f7fd 8%) 0 4px;
+ 
+    -webkit-background-size: 100% 20px;
+    -moz-background-size: 100% 20px;
+    -ms-background-size: 100% 20px;
+    -o-background-size: 100% 20px;
+    background-size: 100% 20px;
+}
