@@ -12,7 +12,7 @@ subtitle: শতং বদ মা লিখ
 email: royutsargo@gmail.com
 description: আমি খুবই সহজ মানুষ। সোজা ভাবি, সোজা চলি, সোজা বলি, সোজা লিখি। কারো চিত্তবিনোদনের
   কোনো অভিপ্রায় নেই। যা কিছু লিখি তা আমার হৃদয়ের ছেঁড়া ছেঁড়া কথা। স্বীকারোক্তি।
-baseurl: ''
+baseurl: 
 url: https://blog.utsargo.me
 plugins:
 - jekyll-paginate
@@ -53,15 +53,13 @@ compress_html:
   clippings: all
   comments: all
   endings: all
-  ignore:
-    envs: []
   blanklines: false
   profile: false
   startings:
   - html
   - head
   - body
-fb_app_id: '1640233499610451'
+fb_app_id: 1640233499610451
 fb_username: utsargo.roy
 first_name: উৎসর্গ
 last_name: রায়
