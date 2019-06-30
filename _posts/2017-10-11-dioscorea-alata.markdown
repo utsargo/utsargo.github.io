@@ -26,7 +26,7 @@ layout: post
 <img src="/images/মেটে-আলু.jpg" class="img-fluid" style="padding:10px;">
 </a>
 </div>
-<p style="text-align:right;color: black; padding: 10px 30px 10px auto;"><small> বড় করে দেখতে হলে ছবিতে টোকা দিন</small></p>
+<p style="text-align:right;color: black; padding: 10px 30px 10px auto;"><small>&#9733; বড় করে দেখতে হলে ছবিতে টোকা দিন</small></p>
 </div>
 </div>
 </div>
@@ -54,7 +54,7 @@ layout: post
 <img src="/images/Undhiyu.jpg" class="img-fluid">
 </a>
 </div>
-<p style="text-align:right;color: black;margin-bottom: 0;"><small>\* বড় করে দেখতে হলে ছবিতে টোকা দিন</small></p>
+<p style="text-align:right;color: black;margin-bottom: 0;"><small>&#9733; বড় করে দেখতে হলে ছবিতে টোকা দিন</small></p>
 </div>
 </div>
 
